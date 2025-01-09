@@ -1,19 +1,19 @@
-def is_prime(number):
+def primes_in_range(a, b):
+    if not isinstance(a, int) or not isinstance(b, int):
+        raise ValueError("Error")
+    if a > b:
+        raise ValueError("Error")
 
-    if not isinstance(number, int) or number <= 0:
-        raise ValueError("Zadejte realne cislo vetsi nez 0")
-
-    if number == 1:
-        return False 
-    for i in range(2, int(number ** 0.5) + 1):
-        if number % i == 0:
+    def is_prime(n):
+        if n < 2:
             return False
+        for i in range(2, int(n**0.5) + 1):
+            if n % i == 0:
+                return False
+        return True
 
-    return True
+    return [x for x in range(a, b + 1) if is_prime(x)]
 
-try:
-    print(is_prime(7))  
-    print(is_prime(10))  
-    print(is_prime(-5))  
-except ValueError as e:
-    print(e)
+if __name__ == "__main__":
+    primes = primes_in_range(1, 10)
+    print(primes)
