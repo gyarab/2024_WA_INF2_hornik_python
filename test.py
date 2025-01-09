@@ -2,7 +2,8 @@ def primes_in_range(a, b):
     if not isinstance(a, int) or not isinstance(b, int):
         raise ValueError("Error")
     if a > b:
-        return []
+        a, b = b, a
+
 
     def is_prime(n):
         if n < 2:
@@ -14,6 +15,7 @@ def primes_in_range(a, b):
 
     return [x for x in range(a, b + 1) if is_prime(x)]
 
+
 if __name__ == "__main__":
-    primes = primes_in_range(1, 10)
+    primes = primes_in_range(12, 10)
     print(primes)
