@@ -15,5 +15,5 @@ def primes_in_range(a, b):
     return [x for x in range(a, b + 1) if is_prime(x)]
 
 if __name__ == "__main__":
-    primes = primes_in_range(10, 8)
+    primes = primes_in_range(1, 10)
     print(primes)
