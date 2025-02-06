@@ -1,3 +1,5 @@
+from django.http import HttpResponse
+
 def homepage(request):
     ret = '''
     <!DOCTYPE html>
