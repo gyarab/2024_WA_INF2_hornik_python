@@ -1,4 +1,4 @@
-def homepge(request):
+def homepage(request):
     ret = '''
     <!DOCTYPE html>
     <html>
