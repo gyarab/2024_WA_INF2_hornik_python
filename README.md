@@ -1,4 +1,4 @@
-readme_content = """# Django Diskografie
+
 
 Tento projekt je webová aplikace postavená na Django frameworku pro správu a zobrazování diskografie různých hudebních kapel.
 
