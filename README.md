@@ -1,6 +1,6 @@
 
 
-Tento projekt je webová aplikace postavená na Django frameworku pro správu a zobrazování diskografie různých hudebních kapel.
+Tento projekt je webová aplikace postavená na Django frameworku pro správu a zobrazování diskografie různých (mých oblíbených) hudebních kapel.
 
 ## Požadavky
 
