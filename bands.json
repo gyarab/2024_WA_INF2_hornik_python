@@ -1,62 +1,197 @@
 {
-    "bands": [
-      {
-        "name": "Pink Floyd",
-        "albums": [
-          {
-            "title": "The Dark Side of the Moon",
-            "year": 1973,
-            "genre": "Progressive Rock",
-            "track_count": 10,
-            "tracks": [
-              "Speak to Me",
-              "Breathe",
-              "On the Run",
-              "Time",
-              "The Great Gig in the Sky",
-              "Money",
-              "Us and Them",
-              "Any Colour You Like",
-              "Brain Damage",
-              "Eclipse"
-            ]
-          },
-          {
-            "title": "Wish You Were Here",
-            "year": 1975,
-            "genre": "Progressive Rock",
-            "track_count": 5,
-            "tracks": [
-              "Shine On You Crazy Diamond (Parts I-V)",
-              "Welcome to the Machine",
-              "Have a Cigar",
-              "Wish You Were Here",
-              "Shine On You Crazy Diamond (Parts VI-IX)"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Metallica",
-        "albums": [
-          {
-            "title": "Master of Puppets",
-            "year": 1986,
-            "genre": "Thrash Metal",
-            "track_count": 8,
-            "tracks": [
-              "Battery",
-              "Master of Puppets",
-              "The Thing That Should Not Be",
-              "Welcome Home (Sanitarium)",
-              "Disposable Heroes",
-              "Leper Messiah",
-              "Orion",
-              "Damage, Inc."
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+  "bands": [
+    {
+      "name": "Pink Floyd",
+      "albums": [
+        {
+          "title": "The Dark Side of the Moon",
+          "year": 1973,
+          "genre": "Progressive Rock",
+          "track_count": 10,
+          "tracks": [
+            "Speak to Me",
+            "Breathe",
+            "On the Run",
+            "Time",
+            "The Great Gig in the Sky",
+            "Money",
+            "Us and Them",
+            "Any Colour You Like",
+            "Brain Damage",
+            "Eclipse"
+          ]
+        },
+        {
+          "title": "Wish You Were Here",
+          "year": 1975,
+          "genre": "Progressive Rock",
+          "track_count": 5,
+          "tracks": [
+            "Shine On You Crazy Diamond (Parts I-V)",
+            "Welcome to the Machine",
+            "Have a Cigar",
+            "Wish You Were Here",
+            "Shine On You Crazy Diamond (Parts VI-IX)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Metallica",
+      "albums": [
+        {
+          "title": "Master of Puppets",
+          "year": 1986,
+          "genre": "Thrash Metal",
+          "track_count": 8,
+          "tracks": [
+            "Battery",
+            "Master of Puppets",
+            "The Thing That Should Not Be",
+            "Welcome Home (Sanitarium)",
+            "Disposable Heroes",
+            "Leper Messiah",
+            "Orion",
+            "Damage, Inc."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AC/DC",
+      "albums": [
+        {
+          "title": "Highway to Hell",
+          "year": 1979,
+          "genre": "Hard Rock",
+          "track_count": 10,
+          "tracks": [
+            "Highway to Hell",
+            "Girls Got Rhythm",
+            "Walk All Over You",
+            "Touch Too Much",
+            "Beating Around the Bush",
+            "Shot Down in Flames",
+            "Get It Hot",
+            "If You Want Blood (You've Got It)",
+            "Love Hungry Man",
+            "Night Prowler"
+          ]
+        },
+        {
+          "title": "Back in Black",
+          "year": 1980,
+          "genre": "Hard Rock",
+          "track_count": 10,
+          "tracks": [
+            "Hells Bells",
+            "Shoot to Thrill",
+            "What Do You Do for Money Honey",
+            "Givin the Dog a Bone",
+            "Let Me Put My Love Into You",
+            "Back in Black",
+            "You Shook Me All Night Long",
+            "Have a Drink on Me",
+            "Shake a Leg",
+            "Rock and Roll Ain't Noise Pollution"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Led Zeppelin",
+      "albums": [
+        {
+          "title": "Led Zeppelin IV",
+          "year": 1971,
+          "genre": "Hard Rock",
+          "track_count": 8,
+          "tracks": [
+            "Black Dog",
+            "Rock and Roll",
+            "The Battle of Evermore",
+            "Stairway to Heaven",
+            "Misty Mountain Hop",
+            "Four Sticks",
+            "Going to California",
+            "When the Levee Breaks"
+          ]
+        },
+        {
+          "title": "Physical Graffiti",
+          "year": 1975,
+          "genre": "Hard Rock",
+          "track_count": 15,
+          "tracks": [
+            "Custard Pie",
+            "The Rover",
+            "In My Time of Dying",
+            "Houses of the Holy",
+            "Trampled Under Foot",
+            "Kashmir",
+            "In the Light",
+            "Bron-Yr-Aur",
+            "Down by the Seaside",
+            "Ten Years Gone",
+            "Night Flight",
+            "The Wanton Song",
+            "Boogie with Stu",
+            "Black Country Woman",
+            "Sick Again"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Beatles",
+      "albums": [
+        {
+          "title": "Abbey Road",
+          "year": 1969,
+          "genre": "Rock",
+          "track_count": 17,
+          "tracks": [
+            "Come Together",
+            "Something",
+            "Maxwell's Silver Hammer",
+            "Oh! Darling",
+            "Octopus's Garden",
+            "I Want You (She's So Heavy)",
+            "Here Comes the Sun",
+            "Because",
+            "You Never Give Me Your Money",
+            "Sun King",
+            "Mean Mr. Mustard",
+            "Polythene Pam",
+            "She Came in Through the Bathroom Window",
+            "Golden Slumbers",
+            "Carry That Weight",
+            "The End",
+            "Her Majesty"
+          ]
+        },
+        {
+          "title": "Sgt. Pepper's Lonely Hearts Club Band",
+          "year": 1967,
+          "genre": "Rock",
+          "track_count": 13,
+          "tracks": [
+            "Sgt. Pepper's Lonely Hearts Club Band",
+            "With a Little Help from My Friends",
+            "Lucy in the Sky with Diamonds",
+            "Getting Better",
+            "Fixing a Hole",
+            "She's Leaving Home",
+            "Being for the Benefit of Mr. Kite!",
+            "Within You Without You",
+            "When I'm Sixty-Four",
+            "Lovely Rita",
+            "Good Morning Good Morning",
+            "Sgt. Pepper's Lonely Hearts Club Band (Reprise)",
+            "A Day in the Life"
+          ]
+        }
+      ]
+    }
+  ]
+}
