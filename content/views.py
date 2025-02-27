@@ -1,15 +1,7 @@
-from django.http import HttpResponse
 
 def homepage(request):
-    ret = '''
-    <!DOCTYPE html>
-    <html>
-    <head></head>
-    <body>
-    <h1>Homepage</h1>
-    </body></html>
-    '''
-    return HttpResponse(ret)
+    
 
-def hello(request):
-    return HttpResponse('Ahoj!')
+
+    return render(request, 'content/homepage.html')
+    
