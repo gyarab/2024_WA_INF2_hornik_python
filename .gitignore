@@ -1,6 +1,11 @@
+
 .venv
-db.sqlite3
+#####
+
 __pycache__
 dist/
 build/
 *.egg-info/
+#####
+
+db.sqlite3
