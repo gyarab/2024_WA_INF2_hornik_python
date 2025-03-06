@@ -1,15 +1,18 @@
+from django.shortcuts import render
 from django.http import HttpResponse
 
-def homepage(request):
-    ret = '''
-    <!DOCTYPE html>
-    <html>
-    <head></head>
-    <body>
-    <h1>Homepage</h1>
-    </body></html>
-    '''
-    return HttpResponse(ret)
+import requests
+import json
 
-def hello(request):
-    return HttpResponse('Ahoj!')
+def homepage(request):
+    with open('bands.json', encoding='utf-8') as f:
+        bands = json.load(f)
+
+    return render(request, 'content/homepage.html', {'bands': bands})
+
+def article(request, id):
+    with open('bands.json', encoding='utf-8') as f:
+        bands = json.load(f)
+
+    article = bands[id]
+    return render(request, 'content/bands.html', {'article': article})
