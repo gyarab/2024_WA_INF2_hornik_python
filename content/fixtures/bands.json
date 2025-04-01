@@ -1,0 +1,32 @@
+[
+    {
+        "model": "content.album",
+        "pk": 1,
+        "fields": {
+            "band": "Nirvana",
+            "title": "Nevermind",
+            "year": 1991,
+            "cover": "URL_OBRÁZKU",
+            "tracks": [
+                "Smells Like Teen Spirit",
+                "In Bloom",
+                "Come as You Are"
+            ]
+        }
+    },
+    {
+        "model": "content.album",
+        "pk": 2,
+        "fields": {
+            "band": "Metallica",
+            "title": "Master of Puppets",
+            "year": 1986,
+            "cover": "URL_OBRÁZKU",
+            "tracks": [
+                "Battery",
+                "Master of Puppets",
+                "The Thing That Should Not Be"
+            ]
+        }
+    }
+]

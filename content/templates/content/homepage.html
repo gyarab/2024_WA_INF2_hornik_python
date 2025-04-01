@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diskografie</title>
+{% extends "content/base.html" %}
 
-    {% load static %}
+{% block title %}Úvodní stránka{% endblock %}
 
-    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
-
-</head>
-<body>
-    <h1>Bruno smrdi fr</h1>
-</body>
-</html>
+{% block content %}
+    <h1 class="text-center">Vítejte v diskografii rockových kapel!</h1>
+    <p class="text-center">Prozkoumej kapely a jejich alba.</p>
+    <div class="text-center">
+        <a href="{% url 'band_list' %}" class="btn btn-primary">Zobrazit kapely</a>
+    </div>
+{% endblock %}
