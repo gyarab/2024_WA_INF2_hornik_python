@@ -1,0 +1,63 @@
+/* homepage.css */
+
+/* Hlavní sekce */
+.hero {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    font-size: 1rem;
+}
+
+/* Výpis kapel nebo alb */
+.band-list, .album-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.band-card, .album-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.band-card img, .album-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.band-card h3, .album-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.band-card p, .album-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Základní úpravy pro texty */
+h1, h2, h3 {
+    font-family: 'Helvetica', sans-serif;
+}

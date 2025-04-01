@@ -1,6 +1,62 @@
-/* Resetujeme některé výchozí styly pro lepší kontrolu */
+/* base.css */
+
+/* Resetování výchozích hodnot pro prohlížeče */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Základní fonty a barvy */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Nastavení šířky a okrajů pro obsah */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Flexbox pro layout */
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1, footer p {
+    text-align: center;
+}
+
+/* Odkazy */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #1E90FF;
+}
+
+/* Základní rozdělení layoutu */
+main {
+    padding: 40px 0;
+}
+
+/* Tlačítka */
+button {
+    padding: 10px 20px;
+    background-color: #1E90FF;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #007bff;
 }

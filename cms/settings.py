@@ -124,9 +124,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Static files settings
 STATIC_URL = 'content/static/'
 
-# Tento adresář musí existovat, jinak Django nebude vědět, kde hledat statické soubory.
+
 STATICFILES_DIRS = [
-    BASE_DIR / 'content/static',  # Tato cesta by měla být relativní k hlavnímu adresáři projektu
+    BASE_DIR / 'content/static', 
 ]
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
