@@ -1,21 +1,24 @@
-{% extends 'content/base.html' %}
+{% extends "content/base.html" %}
 
-{% block title %}{{ band.name }}{% endblock %}
+{% block title %}{{ band.name }} - Detail{% endblock %}
 
 {% block content %}
-    <div class="band-detail">
-        <img src="{{ band.image }}" alt="{{ band.name }}" class="band-image">
-        <h2>{{ band.name }}</h2>
-        <p><strong>Formed:</strong> {{ band.formed_year }}</p>
-        <p>{{ band.description }}</p>
-        
-        <h3>Album: {{ band.album.title }} ({{ band.album.release_year }})</h3>
-        <ul>
-            {% for track in band.album.tracks %}
-                <li>{{ track }}</li>
-            {% endfor %}
-        </ul>
-        
-        <a href="{% url 'homepage' %}">Back to homepage</a>
+<div class="band-detail">
+    <h2>{{ band.name }}</h2>
+    <img src="{{ band.image_url }}" alt="{{ band.name }} logo" class="band-image">
+    <p>{{ band.description }}</p>
+
+    <h3>Alba</h3>
+    <div class="album-list">
+        {% for album in band.albums %}
+        <div class="album">
+            <img src="{{ album.cover_image_url }}" alt="{{ album.title }}">
+            <h4>{{ album.title }}</h4>
+            <p>{{ album.release_year }}</p>
+        </div>
+        {% empty %}
+        <p>Žádná alba nejsou k dispozici.</p>
+        {% endfor %}
     </div>
+</div>
 {% endblock %}

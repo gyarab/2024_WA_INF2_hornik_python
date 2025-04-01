@@ -1,30 +1,18 @@
-{% extends 'content/base.html' %}
+{% extends "content/base.html" %}
 
-{% block title %}Hlavní stránka{% endblock %}
+{% block title %}Seznam kapel{% endblock %}
 
 {% block content %}
-    <section class="band-list">
+    <h2>Seznam kapel</h2>
+    <div class="band-list">
         {% for band in bands %}
             <div class="band-card">
-                <img src="{{ band.image }}" alt="{{ band.name }}" class="band-image">
-                <h2>{{ band.name }}</h2>
-                <p><strong>Formed:</strong> {{ band.formed_year }}</p>
-                <p>{{ band.description }}</p>
-
-                <h3>Alba:</h3>
-                <ul>
-                    {% for album in band.albums %}
-                        <li>
-                            <strong>{{ album.title }}</strong> ({{ album.release_year }})
-                            <ul>
-                                {% for track in album.tracks %}
-                                    <li>{{ track }}</li>
-                                {% endfor %}
-                            </ul>
-                        </li>
-                    {% endfor %}
-                </ul>
+                <a href="{% url 'band_detail' band.id %}">
+                    <img src="{{ band.image_url }}" alt="{{ band.name }} logo">
+                    <h3>{{ band.name }}</h3>
+                    <p>Formed in: {{ band.formed_year }}</p>
+                </a>
             </div>
         {% endfor %}
-    </section>
+    </div>
 {% endblock %}

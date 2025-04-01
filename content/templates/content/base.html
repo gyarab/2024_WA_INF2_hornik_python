@@ -1,22 +1,25 @@
 {% load static %}
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Diskografie{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'content/css/base.css' %}">
-    <link rel="stylesheet" href="{% static 'content/css/homepage.css' %}">
+    <title>{% block title %}Můj web{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'content/css/styles.css' %}">
 </head>
 <body>
     <header>
-        <h1>Diskografie Kapel</h1>
+        <h1><a href="/">Kapely a jejich alba</a></h1>
+        
     </header>
+    
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
 
-    <main>
-        {% block content %}{% endblock %}
-    </main>
-
+    <footer>
+        <p>&copy; 2024 Kapely a jejich alba</p>
+    </footer>
 </body>
 </html>
