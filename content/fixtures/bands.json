@@ -1,32 +1,34 @@
 [
     {
-        "model": "content.album",
-        "pk": 1,
-        "fields": {
-            "band": "Nirvana",
-            "title": "Nevermind",
-            "year": 1991,
-            "cover": "URL_OBRÁZKU",
+        "id": 1,
+        "name": "Rybí Prsty",
+        "formed_year": 2010,
+        "album": {
+            "title": "Zlatá řeka",
+            "release_year": 2020,
             "tracks": [
-                "Smells Like Teen Spirit",
-                "In Bloom",
-                "Come as You Are"
+                "Zlatá řeka",
+                "Pod hladinou",
+                "Tichý hrdina"
             ]
-        }
+        },
+        "image": "/static/content/images/rybi_prsty.jpg",
+        "description": "Rybí Prsty je rocková kapela, která vznikla v roce 2010. Hrají energický rock s prvky metalu."
     },
     {
-        "model": "content.album",
-        "pk": 2,
-        "fields": {
-            "band": "Metallica",
-            "title": "Master of Puppets",
-            "year": 1986,
-            "cover": "URL_OBRÁZKU",
+        "id": 2,
+        "name": "Hlava XXII",
+        "formed_year": 2015,
+        "album": {
+            "title": "Temné časy",
+            "release_year": 2018,
             "tracks": [
-                "Battery",
-                "Master of Puppets",
-                "The Thing That Should Not Be"
+                "Noční můra",
+                "Světlo v temnotě",
+                "Temné časy"
             ]
-        }
+        },
+        "image": "/static/content/images/hlava_xxii.jpg",
+        "description": "Hlava XXII je kapela se silným metalovým zvukem, která vznikla v roce 2015."
     }
 ]

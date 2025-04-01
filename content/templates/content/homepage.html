@@ -1,12 +1,30 @@
-{% extends "content/base.html" %}
+{% extends 'content/base.html' %}
 
-
-{% block title %}Úvodní stránka{% endblock %}
+{% block title %}Hlavní stránka{% endblock %}
 
 {% block content %}
-    <h1 class="text-center">Vítejte v diskografii rockových kapel!</h1>
-    <p class="text-center">Prozkoumej kapely a jejich alba.</p>
-    <div class="text-center">
-        <a href="{% url 'band_list' %}" class="btn btn-primary">Zobrazit kapely</a>
-    </div>
+    <section class="band-list">
+        {% for band in bands %}
+            <div class="band-card">
+                <img src="{{ band.image }}" alt="{{ band.name }}" class="band-image">
+                <h2>{{ band.name }}</h2>
+                <p><strong>Formed:</strong> {{ band.formed_year }}</p>
+                <p>{{ band.description }}</p>
+
+                <h3>Alba:</h3>
+                <ul>
+                    {% for album in band.albums %}
+                        <li>
+                            <strong>{{ album.title }}</strong> ({{ album.release_year }})
+                            <ul>
+                                {% for track in album.tracks %}
+                                    <li>{{ track }}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+    </section>
 {% endblock %}

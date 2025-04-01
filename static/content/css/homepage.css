@@ -58,6 +58,7 @@
 }
 
 /* Základní úpravy pro texty */
-h1, h2, h3 {
+h1 {
     font-family: 'Helvetica', sans-serif;
+    background-color: black;
 }

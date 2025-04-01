@@ -1,32 +1,22 @@
 {% load static %}
+
 <!DOCTYPE html>
-<html lang="cs">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{% block title %}Tvoje stránka{% endblock %}</title>
-    
-        
-        <link rel="stylesheet" type="text/css" href="{% static 'content/css/base.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'content/css/homepage.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'content/css/content.css' %}">
-    </head>
-    
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Diskografie{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'content/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'content/css/homepage.css' %}">
+</head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="{% url 'homepage' %}">Diskografie</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="{% url 'band_list' %}">Kapely</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <header>
+        <h1>Diskografie Kapel</h1>
+    </header>
 
-    <div class="container mt-4">
+    <main>
         {% block content %}{% endblock %}
-    </div>
+    </main>
+
 </body>
 </html>

@@ -122,10 +122,12 @@ USE_TZ = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Static files settings
-STATIC_URL = 'content/static/'
+import os
 
+# URL pro přístup k statickým souborům ve webovém prohlížeči
+STATIC_URL = '/static/'
 
+# Cesta k adresáři, kde budou uloženy statické soubory v průběhu vývoje
 STATICFILES_DIRS = [
-    BASE_DIR / 'content/static', 
+    os.path.join(BASE_DIR, 'static'),  # Tento adresář bude obsahovat statické soubory během vývoje
 ]
-

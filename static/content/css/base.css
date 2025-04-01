@@ -1,17 +1,16 @@
-/* base.css */
 
-/* Resetování výchozích hodnot pro prohlížeče */
-* {
+
+h1{
+    background-color: black;
+    padding: 10px;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-/* Základní fonty a barvy */
 body {
+    text-align: center;
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: white;
+    color: white;
     line-height: 1.6;
 }
 
@@ -22,8 +21,9 @@ body {
 }
 
 /* Flexbox pro layout */
-header, footer {
-    background-color: #333;
+header {
+    display: flexbox;
+    background-color: black;
     color: white;
     padding: 20px 0;
 }

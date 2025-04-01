@@ -1,0 +1,21 @@
+{% extends 'content/base.html' %}
+
+{% block title %}{{ band.name }}{% endblock %}
+
+{% block content %}
+    <div class="band-detail">
+        <img src="{{ band.image }}" alt="{{ band.name }}" class="band-image">
+        <h2>{{ band.name }}</h2>
+        <p><strong>Formed:</strong> {{ band.formed_year }}</p>
+        <p>{{ band.description }}</p>
+        
+        <h3>Album: {{ band.album.title }} ({{ band.album.release_year }})</h3>
+        <ul>
+            {% for track in band.album.tracks %}
+                <li>{{ track }}</li>
+            {% endfor %}
+        </ul>
+        
+        <a href="{% url 'homepage' %}">Back to homepage</a>
+    </div>
+{% endblock %}
