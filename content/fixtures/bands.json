@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Nirvana",
-        "image_url": "https://example.com/nirvana-logo.jpg",
+        "image_url": "https://brandlogos.net/wp-content/uploads/2013/04/nirvana-band-vector-logo.png",
         "formed_year": 1987,
         "description": "Nirvana was an American rock band formed in 1987, known for its influence on the grunge movement.",
         "albums": [
@@ -21,19 +21,19 @@
     {
         "id": 2,
         "name": "Pearl Jam",
-        "image_url": "https://example.com/pearljam-logo.jpg",
+        "image_url": "https://cdn.freebiesupply.com/logos/large/2x/pearl-jam-alive-logo-png-transparent.png",
         "formed_year": 1990,
         "description": "Pearl Jam is an American rock band formed in 1990, known for their work in the Seattle grunge scene.",
         "albums": [
             {
                 "title": "Ten",
                 "release_year": 1991,
-                "cover_image_url": "https://example.com/ten-cover.jpg"
+                "cover_image_url": "https://i.scdn.co/image/ab67616d0000b273d400d27cba05bb0545533864"
             },
             {
                 "title": "Vs.",
                 "release_year": 1993,
-                "cover_image_url": "https://example.com/vs-cover.jpg"
+                "cover_image_url": "https://m.media-amazon.com/images/I/71+M1LtQNUL._UF1000,1000_QL80_.jpg"
             }
         ]
     }
