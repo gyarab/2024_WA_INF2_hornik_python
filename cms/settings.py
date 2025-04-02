@@ -52,11 +52,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'cms.urls'
 
+import os
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # Zde můžeš mít global templates
+        'APP_DIRS': True,  # Toto říká Djangovi, aby hledal šablony ve složkách aplikací
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -124,10 +125,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Static files settings
 import os
 
-# URL pro přístup k statickým souborům ve webovém prohlížeči
 STATIC_URL = '/static/'
 
-# Cesta k adresáři, kde budou uloženy statické soubory v průběhu vývoje
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),  # Tento adresář bude obsahovat statické soubory během vývoje
+    os.path.join(BASE_DIR, 'static')
 ]

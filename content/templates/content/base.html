@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Diskografie{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'content/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'content/css/style.css' %}">
 </head>
 <body>
     <header>
         <h1><a href="/">Diskografie</a></h1>
-        
+        <a href="{% url 'admin:index' %}" class="admin-button">Admin</a>       
     </header>
     
     <div class="container">

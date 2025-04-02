@@ -1,24 +1,12 @@
-import json
-from django.shortcuts import render
-from django.http import HttpResponse
-from django.template import loader
-
-def load_bands():
-    """Načte data z JSON souboru"""
-    with open('content/fixtures/bands.json', 'r') as file:
-        data = json.load(file)
-    return data
+# content/views.py
+from django.shortcuts import render, get_object_or_404
+from .models import Band
 
 def homepage(request):
-    """Zobrazení seznamu kapel na hlavní stránce"""
-    bands = load_bands()  # Načteme kapely z JSON souboru
+    bands = Band.objects.all()  # Načteme všechny kapely
     return render(request, 'content/homepage.html', {'bands': bands})
 
 def band_detail(request, band_id):
-    bands = load_bands()  # Načteme kapely z JSON souboru
-    band = next((band for band in bands if band['id'] == band_id), None)
-    
-    if band is None:
-        return HttpResponse("Kapela nenalezena.", status=404)
-    
-    return render(request, 'content/band_detail.html', {'band': band})
+    band = get_object_or_404(Band, id=band_id)  # Najdeme kapelu podle ID
+    albums = band.albums.all()  # Načteme všechna alba této kapely
+    return render(request, 'content/band_detail.html', {'band': band, 'albums': albums})

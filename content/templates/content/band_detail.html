@@ -1,24 +1,35 @@
-{% extends "content/base.html" %}
+{% extends 'content/base.html' %}
 
-{% block title %}{{ band.name }} - Detail{% endblock %}
+{% block title %}{{ band.name }}{% endblock %}
 
 {% block content %}
-<div class="band-detail">
-    <h2>{{ band.name }}</h2>
-    <img src="{{ band.image_url }}" alt="{{ band.name }} logo" class="band-image">
-    <p>{{ band.description }}</p>
 
-    <h3>Alba</h3>
-    <div class="album-list">
-        {% for album in band.albums %}
-        <div class="album">
-            <img src="{{ album.cover_image_url }}" alt="{{ album.title }}">
-            <h4>{{ album.title }}</h4>
-            <p>{{ album.release_year }}</p>
-        </div>
+    <h1>{{ band.name }}</h1>
+    {% if band.logo %}
+        <img src="{{ band.logo }}" alt="{{ band.name }} logo" class="band-logo">
+    {% else %}
+        <p>Logo není dostupné</p>
+    {% endif %}
+    <p>Rok založení: {{ band.founded }}</p>
+    <p>Žánr: {{ band.genre }}</p>
+    <p>{{ band.description }}</p>
+    
+
+    
+    <h2>Alba</h2>
+    <div class="albums-container">
+        {% for album in albums %}
+            <div class="album-card">
+                <h3>{{ album.title }}</h3>
+                {% if album.cover_image %}
+                    <img src="{{ album.cover_image }}" alt="{{ album.title }} cover" class="album-cover">
+                {% else %}
+                    <p>Obal alba není dostupný</p>
+                {% endif %}
+                <p>Rok vydání: {{ album.release_date }}</p>
+            </div>
         {% empty %}
-        <p>Žádná alba nejsou k dispozici.</p>
+            <p>Tato kapela zatím nemá žádná alba.</p>
         {% endfor %}
     </div>
-</div>
 {% endblock %}

@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Karty (kapely a alba) */
+.card, .band-card, .album-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+}
+
+.card:hover, .band-card:hover, .album-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img, .album-card img, .band-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card h3, .card h4, .band-card h2, .album-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    padding: 10px;
+}
+
+.card p, .band-card p, .album-card p {
+    font-size: 1em;
+    color: #666;
+    padding-bottom: 10px;
+}
+
+/* Seznamy (kapely a alba) */
+.list, .bands-container, .albums-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    justify-content: space-around;
+}
+
+.album-list {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+/* Detail kapely */
+.band-detail {
+    text-align: center;
+}
+
+.band-detail img.band-image {
+    max-width: 300px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Responsivní design pro mobilní zařízení */
+@media screen and (max-width: 768px) {
+    .list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.admin-button {
+    background: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.album-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}

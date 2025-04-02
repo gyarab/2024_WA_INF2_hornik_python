@@ -1,17 +1,19 @@
-{% extends "content/base.html" %}
+{% extends 'content/base.html' %}
 
-{% block title %}Diskografie{% endblock %}
+{% block title %}Kapely{% endblock %}
 
 {% block content %}
-    <h2>Seznam kapel</h2>
-    <div class="band-list">
+    <h1>Kapely</h1>
+    <div class="bands-container">
         {% for band in bands %}
             <div class="band-card">
-                <a href="{% url 'band_detail' band.id %}">
-                    <img src="{{ band.image_url }}" alt="{{ band.name }} logo">
-                    <h3>{{ band.name }}</h3>
-                    <p>Formed in: {{ band.formed_year }}</p>
-                </a>
+                <h2>{{ band.name }}</h2>
+                {% if band.logo %}
+                    <img src="{{ band.logo }}" alt="{{ band.name }} logo" class="band-logo">
+                {% else %}
+                    <p>Logo není dostupné</p>
+                {% endif %}
+                <a href="{% url 'band_detail' band.id %}" class="band-details-link">Zobrazit detaily</a>
             </div>
         {% endfor %}
     </div>
