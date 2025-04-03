@@ -11,7 +11,7 @@ Tento projekt je webová aplikace postavená na Django frameworku pro správu a 
 
 1. Naklonujte repozitář:
    ```bash
-   git clone https://github.com/uzivatel/django-diskografie.git
+   git clone https://github.com/gyarab/2024_WA_INF2_hornik_python.git
    cd django-diskografie
 
 2. Vytvořte a aktivujte virtuální prostředí:
