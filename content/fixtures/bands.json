@@ -1,97 +1,87 @@
 [
-    {
-        "id": 1,
-        "name": "Nirvana",
-        "image_url": "https://brandlogos.net/wp-content/uploads/2013/04/nirvana-band-vector-logo.png",
-        "formed_year": 1987,
-        "description": "Nirvana was an American rock band formed in 1987, known for its influence on the grunge movement.",
-        "albums": [
-            {
-                "title": "Nevermind",
-                "release_year": 1991,
-                "cover_image_url": "https://example.com/nevermind-cover.jpg"
-            },
-            {
-                "title": "In Utero",
-                "release_year": 1993,
-                "cover_image_url": "https://example.com/in-utero-cover.jpg"
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "name": "AC/DC",
-        "image_url": "https://i.pinimg.com/236x/53/f1/0d/53f10d13ef3bedd6cc830c035ac795c3.jpg",
-        "formed_year": 1973,
-        "description": "AC/DC is an Australian rock band formed in 1973, known for their high-energy performances and iconic rock anthems.",
-        "albums": [
-            {
-                "title": "Back in Black",
-                "release_year": 1980,
-                "cover_image_url": "https://example.com/back-in-black-cover.jpg"
-            },
-            {
-                "title": "Highway to Hell",
-                "release_year": 1979,
-                "cover_image_url": "https://example.com/highway-to-hell-cover.jpg"
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "name": "Led Zeppelin",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Led_Zeppelin_logo.png",
-        "formed_year": 1968,
-        "description": "Led Zeppelin was an English rock band formed in 1968, widely regarded as one of the greatest rock bands of all time.",
-        "albums": [
-            {
-                "title": "Led Zeppelin IV",
-                "release_year": 1971,
-                "cover_image_url": "https://example.com/led-zeppelin-iv-cover.jpg"
-            },
-            {
-                "title": "Physical Graffiti",
-                "release_year": 1975,
-                "cover_image_url": "https://example.com/physical-graffiti-cover.jpg"
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "name": "The Rolling Stones",
-        "image_url": "https://upload.wikimedia.org/wikipedia/en/1/1b/Rolling_Stones_Logo.png",
-        "formed_year": 1962,
-        "description": "The Rolling Stones are an English rock band formed in 1962, known for their enduring influence on rock music.",
-        "albums": [
-            {
-                "title": "Sticky Fingers",
-                "release_year": 1971,
-                "cover_image_url": "https://example.com/sticky-fingers-cover.jpg"
-            },
-            {
-                "title": "Exile on Main St.",
-                "release_year": 1972,
-                "cover_image_url": "https://example.com/exile-on-main-st-cover.jpg"
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "name": "Pink Floyd",
-        "image_url": "https://upload.wikimedia.org/wikipedia/en/6/6a/Pink_Floyd_logo.png",
-        "formed_year": 1965,
-        "description": "Pink Floyd was an English rock band formed in 1965, known for their progressive and psychedelic music.",
-        "albums": [
-            {
-                "title": "The Dark Side of the Moon",
-                "release_year": 1973,
-                "cover_image_url": "https://example.com/dark-side-of-the-moon-cover.jpg"
-            },
-            {
-                "title": "The Wall",
-                "release_year": 1979,
-                "cover_image_url": "https://example.com/the-wall-cover.jpg"
-            }
-        ]
+{
+    "model": "content.band",
+    "pk": 1,
+    "fields": {
+        "name": "ACDC",
+        "founded": "1973",
+        "genre": [1],
+        "description": "bla bla bla",
+        "logo" : "https://upload.wikimedia.org/wikipedia/commons/5/58/Logo_ACDC.svg"
     }
+},
+{
+    "model": "content.band",
+    "pk": 2,
+    "fields": {
+        "name": "Led Zeppelin",
+        "founded": "1968",
+        "genre": [1],
+        "description": "bla bla bla",
+        "logo" : "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Led_Zeppelin_logo.svg/2560px-Led_Zeppelin_logo.svg.png"
+    }
+},
+{
+    "model": "content.band",
+    "pk": 3,
+    "fields": {
+        "name": "The Beatles",
+        "founded": "1960",
+        "genre": [1],
+        "description": "bla bla bla",
+        "logo" : "https://images.seeklogo.com/logo-png/13/2/the-beatles-logo-png_seeklogo-138099.png"
+    }
+},
+{
+    "model": "content.band",
+    "pk": 4,
+    "fields": {
+        "name": "Queen",
+        "founded": "1970",
+        "genre": [1],
+        "description": "bla bla bla",
+        "logo" : "https://imgs.smoothradio.com/images/26964?crop=16_9&width=660&relax=1&format=webp&signature=K7p32xCrP-zbqOoQVxZRhRfbp50="
+    }
+},
+{
+    "model": "content.band",
+    "pk": 5,
+    "fields": {
+        "name": "Nirvana",
+        "founded": "1987",
+        "genre": [1],
+        "description": "bla bla bla",
+        "logo" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Nirvana_logo.svg/2560px-Nirvana_logo.svg.png"
+    }
+},
+
+{
+    "model": "content.genre",
+    "pk": 1,
+    "fields": {
+        "name": "Rock"
+    }
+
+
+},
+{
+    "model": "content.album",
+    "pk": 1,
+    "fields": {
+        "band": 1,
+        "title": "Back in Black",
+        "release_date": "1980",
+        "cover_image": "https://upload.wikimedia.org/wikipedia/commons/9/92/ACDC_Back_in_Black.png"
+    }
+},
+{
+    "model": "content.album",
+    "pk": 2,
+    "fields": {
+        "band": 2,
+        "title": "Led Zeppelin IV",
+        "release_date": "1971",
+        "cover_image": "https://upload.wikimedia.org/wikipedia/en/2/26/Led_Zeppelin_-_Led_Zeppelin_IV.jpg"
+    }
+}
 ]

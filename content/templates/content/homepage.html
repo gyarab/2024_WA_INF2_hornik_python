@@ -1,20 +1,20 @@
 {% extends 'content/base.html' %}
+{% load static %}
 
 {% block title %}Kapely{% endblock %}
 
 {% block content %}
-    <h1>Kapely</h1>
+    <h2>Kapely</h2>
     <div class="bands-container">
         {% for band in bands %}
-            <div class="band-card">
+        <a href="{% url 'band_detail' band.id %}" class="band-card">
                 <h2>{{ band.name }}</h2>
                 {% if band.logo %}
                     <img src="{{ band.logo }}" alt="{{ band.name }} logo" class="band-logo">
                 {% else %}
                     <p>Logo není dostupné</p>
-                {% endif %}
-                <a href="{% url 'band_detail' band.id %}" class="band-details-link">Zobrazit detaily</a>
-            </div>
+                {% endif %}    
+        </a>
         {% endfor %}
     </div>
 {% endblock %}

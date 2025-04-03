@@ -1,0 +1,41 @@
+.band-card{
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    height: 280px;
+    color: black;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.band-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.band-card h2 {
+    font-size: 1.2em;
+    color: #333;
+    padding: 10px;
+}
+.bands-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-around;
+}
+.band-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    object-fit: cover;
+}

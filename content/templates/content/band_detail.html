@@ -1,4 +1,5 @@
 {% extends 'content/base.html' %}
+{% load static %}
 
 {% block title %}{{ band.name }}{% endblock %}
 
@@ -11,7 +12,9 @@
         <p>Logo není dostupné</p>
     {% endif %}
     <p>Rok založení: {{ band.founded }}</p>
-    <p>Žánr: {{ band.genre }}</p>
+    <p>Žánr:  {% for genre in band.genre.all%}
+        {{ genre.name }}
+    {% endfor %} </p>
     <p>{{ band.description }}</p>
     
 
