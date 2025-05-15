@@ -9,12 +9,17 @@
     <link rel="stylesheet" href="{% static 'content/css/homepage.css' %}">
     <link rel="stylesheet" href="{% static 'content/css/band_detail.css' %}">
 </head>
+
 <body>
     <header>
-        <h1><a href="/">Diskografie</a></h1>
-        <a href="{% url 'admin:index' %}" class="admin-button">Admin</a>
-        <div id="klikz-20"></div>
-        <script src="https://klikz.svs.gyarab.cz/hit/20?size=small&front=e60000"></script>      
+        <div class="header-container">
+            <h1><a href="/">Diskografie</a></h1>
+            <div class="header-buttons">
+                <a href="{% url 'admin:index' %}" class="admin-button">Admin</a>
+                <div class="click-counter" id="klikz-20">click counter</div>
+                <script src="https://klikz.svs.gyarab.cz/hit/20?size=small&front=e60000"></script>
+            </div>
+        </div>      
     </header>
     
     <div class="container">

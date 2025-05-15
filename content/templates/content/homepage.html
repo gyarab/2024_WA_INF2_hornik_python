@@ -4,17 +4,34 @@
 {% block title %}Kapely{% endblock %}
 
 {% block content %}
-    <h2>Kapely</h2>
+    <h2>Hledej kapelu!</h2>
+    <form method="get" class="search-filter-form">
+        <input type="text" name="search" placeholder="Vyhledat kapelu" value="{{ request.GET.search|default:'' }}">
+
+        <select name="genre">
+            <option value="">-- Všechny žánry --</option>
+            {% for genre in genres %}
+                <option value="{{ genre.id }}" {% if selected_genre == genre.id %}selected{% endif %}>
+                    {{ genre.name }}
+                </option>
+            {% endfor %}
+        </select>
+
+        <button type="submit">Filtrovat</button>
+    </form>
+
     <div class="bands-container">
         {% for band in bands %}
-        <a href="{% url 'band_detail' band.id %}" class="band-card">
+            <a href="{% url 'band_detail' band.id %}" class="band-card">
                 <h2>{{ band.name }}</h2>
                 {% if band.logo %}
                     <img src="{{ band.logo }}" alt="{{ band.name }} logo" class="band-logo">
                 {% else %}
                     <p>Logo není dostupné</p>
-                {% endif %}    
-        </a>
+                {% endif %}
+            </a>
+        {% empty %}
+            <p>Žádné kapely neodpovídají filtru.</p>
         {% endfor %}
     </div>
 {% endblock %}
