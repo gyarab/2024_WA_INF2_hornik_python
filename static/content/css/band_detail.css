@@ -2,12 +2,8 @@
 .band-detail {
     text-align: center;
 }
-
-.band-detail img.band-image {
-    max-width: 300px;
-    margin-top: 20px;
-    border-radius: 8px;
-    
+.container h1{
+    margin-bottom: 20px;
 }
 .album-card {
     background-color: #FFFFFF;
@@ -60,4 +56,5 @@
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
