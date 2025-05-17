@@ -9,7 +9,7 @@
         <input type="text" name="search" placeholder="Vyhledat kapelu" value="{{ request.GET.search|default:'' }}">
 
         <select name="genre">
-            <option value="">-- Všechny žánry --</option>
+            <option value="">-- všechny žánry --</option>
             {% for genre in genres %}
                 <option value="{{ genre.id }}" {% if selected_genre == genre.id %}selected{% endif %}>
                     {{ genre.name }}
@@ -17,7 +17,7 @@
             {% endfor %}
         </select>
 
-        <button type="submit">Filtrovat</button>
+        <button type="submit">Hledat</button>
     </form>
 
     <div class="bands-container">
