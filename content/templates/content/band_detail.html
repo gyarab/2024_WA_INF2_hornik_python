@@ -10,6 +10,7 @@
     {% else %}
         <p>Logo není dostupné</p>
     {% endif %}
+    <p>Celý název interpreta: {{ band.name }}</p>
     <p>Rok založení: {{ band.founded }}</p>
     <p>Žánr:  {% for genre in band.genre.all%}
         {{ genre.name }}

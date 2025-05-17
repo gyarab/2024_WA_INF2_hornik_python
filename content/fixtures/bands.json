@@ -3,7 +3,7 @@
     "model": "content.band",
     "pk": 1,
     "fields": {
-        "name": "ACDC",
+        "name": "AC/DC",
         "founded": "1973",
         "genre": [1],
         "description": "bla bla bla",
@@ -49,7 +49,7 @@
     "fields": {
         "name": "Nirvana",
         "founded": "1987",
-        "genre": [1],
+        "genre": [2],
         "description": "bla bla bla",
         "logo" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Nirvana_logo.svg/2560px-Nirvana_logo.svg.png"
     }
@@ -60,6 +60,15 @@
     "pk": 1,
     "fields": {
         "name": "Rock"
+    }
+
+
+},
+{
+    "model": "content.genre",
+    "pk": 2,
+    "fields": {
+        "name": "Grunge"
     }
 
 
