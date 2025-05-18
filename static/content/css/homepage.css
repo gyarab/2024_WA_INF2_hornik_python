@@ -44,6 +44,12 @@
 
 @media screen and (max-width: 768px) {
 
+    .band-card h2 {
+    font-size: 1.2em;
+    color: #333;
+    padding: 5px;
+    }
+
     .bands-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -53,7 +59,7 @@
 
     .band-card {
         width: 80%;
-        height: 240px;
+        height: 120px;
         margin: 10px auto;
         padding: 10px;
         justify-content: center;
@@ -66,6 +72,7 @@
     justify-content: center;
     object-fit: cover;
     justify-self: center;
+    margin-top: -10px;
 
 }
 }

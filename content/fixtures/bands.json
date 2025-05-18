@@ -1,120 +1,321 @@
 [
-{
+  {
     "model": "content.band",
     "pk": 1,
     "fields": {
-        "name": "AC/DC",
-        "founded": "1973-dosud",
-        "genre": [1],
-        "description": "AC/DC je australská rocková kapela založená v roce 1973 bratry Malcolmem a Angusem Youngovými. Proslavila se syrovým hardrockovým zvukem, jednoduchými, ale silnými kytarovými riffy a strhujícím pódiovým projevem. Alba jako High Voltage, Highway to Hell nebo Back in Black patří mezi nejprodávanější v historii rockové hudby. AC/DC jsou považováni za jednu z největších kapel všech dob a jejich styl zůstává nezaměnitelný.",
-        "logo" : "https://upload.wikimedia.org/wikipedia/commons/5/58/Logo_ACDC.svg",
-        "photo" : "https://www.rollingstone.com/wp-content/uploads/2020/10/10025-01E-JC-white_group_4559_sRGB.jpg",
-        "members" : "Angus Young, Brian Johnson, Cliff Williams, Phil Rudd, Stevie Young"
-    
+      "name": "AC/DC",
+      "founded": "1973-dosud",
+      "genre": [1],
+      "description": "AC/DC je australská rocková kapela založená v roce 1973 bratry Malcolmem a Angusem Youngovými. Proslavila se syrovým hardrockovým zvukem, jednoduchými, ale silnými kytarovými riffy a strhujícím pódiovým projevem. Alba jako High Voltage, Highway to Hell nebo Back in Black patří mezi nejprodávanější v historii rockové hudby. AC/DC jsou považováni za jednu z největších kapel všech dob a jejich styl zůstává nezaměnitelný.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/58/Logo_ACDC.svg",
+      "photo": "https://www.rollingstone.com/wp-content/uploads/2020/10/10025-01E-JC-white_group_4559_sRGB.jpg",
+      "members": "Angus Young, Brian Johnson, Cliff Williams, Phil Rudd, Stevie Young"
     }
-},
-{
+  },
+  {
     "model": "content.band",
     "pk": 2,
     "fields": {
-        "name": "Led Zeppelin",
-        "founded": "1968-1980",
-        "genre": [1],
-        "description": "Led Zeppelin, vzniklí v roce 1968, patří mezi zakladatele hard rocku a heavy metalu. Jejich hudba spojuje blues, folk, psychedelii i monumentální rockové aranže. Skupina se proslavila nejen hity jako „Whole Lotta Love“ nebo „Kashmir“, ale i svou mystikou, experimentálním zvukem a monumentálními koncerty. Album Led Zeppelin IV s ikonickou skladbou „Stairway to Heaven“ je považováno za jeden z vrcholů rockové tvorby.",
-        "logo" : "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Led_Zeppelin_logo.svg/2560px-Led_Zeppelin_logo.svg.png",
-        "photo" : "https://www.udiscovermusic.com/wp-content/uploads/2020/11/Led-Zeppelin-GettyImages-84848509-1000x600.jpg",
-        "members" : "Robert Plant, Jimmy Page, John Paul Jones, John Bonham"
-
+      "name": "Led Zeppelin",
+      "founded": "1968-1980",
+      "genre": [1],
+      "description": "Led Zeppelin, vzniklí v roce 1968, patří mezi zakladatele hard rocku a heavy metalu. Jejich hudba spojuje blues, folk, psychedelii i monumentální rockové aranže. Skupina se proslavila nejen hity jako „Whole Lotta Love“ nebo „Kashmir“, ale i svou mystikou, experimentálním zvukem a monumentálními koncerty. Album Led Zeppelin IV s ikonickou skladbou „Stairway to Heaven“ je považováno za jeden z vrcholů rockové tvorby.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Led_Zeppelin_logo.svg/2560px-Led_Zeppelin_logo.svg.png",
+      "photo": "https://www.udiscovermusic.com/wp-content/uploads/2020/11/Led-Zeppelin-GettyImages-84848509-1000x600.jpg",
+      "members": "Robert Plant, Jimmy Page, John Paul Jones, John Bonham"
     }
-},
-{
+  },
+  {
     "model": "content.band",
     "pk": 3,
     "fields": {
-        "name": "The Beatles",
-        "founded": "1960-1970",
-        "genre": [1],
-        "description": "The Beatles, aktivní mezi lety 1960–1970, byli britskou skupinou, která zcela změnila podobu populární hudby. John Lennon, Paul McCartney, George Harrison a Ringo Starr začínali jako beatová senzace, ale rychle přešli k experimentálním a inovativním nahrávkám. Jejich diskografie zahrnuje přelomová alba jako Revolver, Sgt. Pepper's Lonely Hearts Club Band nebo Abbey Road. Beatles ovlivnili nespočet umělců a zůstávají kulturní ikonou.",
-        "logo" : "https://images.seeklogo.com/logo-png/13/2/the-beatles-logo-png_seeklogo-138099.png",
-        "photo" : "https://people.com/thmb/PMUyQaP0AFsOP-Pz4Cwzbrc5KEk=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/the-beetles-2-22b122473d4747759438521bde786ada.jpg",
-        "members" : "John Lennon, Paul McCartney, George Harrison, Ringo Starr"
-
+      "name": "The Beatles",
+      "founded": "1960-1970",
+      "genre": [1],
+      "description": "The Beatles, aktivní mezi lety 1960–1970, byli britskou skupinou, která zcela změnila podobu populární hudby. John Lennon, Paul McCartney, George Harrison a Ringo Starr začínali jako beatová senzace, ale rychle přešli k experimentálním a inovativním nahrávkám. Jejich diskografie zahrnuje přelomová alba jako Revolver, Sgt. Pepper's Lonely Hearts Club Band nebo Abbey Road. Beatles ovlivnili nespočet umělců a zůstávají kulturní ikonou.",
+      "logo": "https://images.seeklogo.com/logo-png/13/2/the-beatles-logo-png_seeklogo-138099.png",
+      "photo": "https://people.com/thmb/PMUyQaP0AFsOP-Pz4Cwzbrc5KEk=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/the-beetles-2-22b122473d4747759438521bde786ada.jpg",
+      "members": "John Lennon, Paul McCartney, George Harrison, Ringo Starr"
     }
-},
-{
+  },
+  {
     "model": "content.band",
     "pk": 4,
     "fields": {
-        "name": "Queen",
-        "founded": "1970-1991",
-        "genre": [1],
-        "description": "Queen, založení v roce 1970, spojili tvrdý rock, pop i operní prvky do unikátního zvuku, který se stal světovým fenoménem. Frontman Freddie Mercury vynikal svým charismatem a hlasovým rozsahem, zatímco Brian May přinesl charakteristický zvuk své kytary Red Special. Hity jako „Bohemian Rhapsody“, „We Are the Champions“ nebo „Somebody to Love“ definují jejich bohatou diskografii, která stále oslovuje nové generace fanoušků.",
-        "logo" : "https://imgs.smoothradio.com/images/26964?crop=16_9&width=660&relax=1&format=webp&signature=K7p32xCrP-zbqOoQVxZRhRfbp50=",
-        "photo" : "https://upload.wikimedia.org/wikipedia/commons/e/ec/Queen_A_Night_At_The_Opera_%281975_Elektra_publicity_photo_02%29.jpg",
-        "members" : "Freddie Mercury, Brian May, Roger Taylor, John Deacon"
-
+      "name": "Queen",
+      "founded": "1970-1991",
+      "genre": [1],
+      "description": "Queen, založení v roce 1970, spojili tvrdý rock, pop i operní prvky do unikátního zvuku, který se stal světovým fenoménem. Frontman Freddie Mercury vynikal svým charismatem a hlasovým rozsahem, zatímco Brian May přinesl charakteristický zvuk své kytary Red Special. Hity jako „Bohemian Rhapsody“, „We Are the Champions“ nebo „Somebody to Love“ definují jejich bohatou diskografii, která stále oslovuje nové generace fanoušků.",
+      "logo": "https://imgs.smoothradio.com/images/26964?crop=16_9&width=660&relax=1&format=webp&signature=K7p32xCrP-zbqOoQVxZRhRfbp50=",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Queen_A_Night_At_The_Opera_%281975_Elektra_publicity_photo_02%29.jpg",
+      "members": "Freddie Mercury, Brian May, Roger Taylor, John Deacon"
     }
-},
-{
+  },
+  {
     "model": "content.band",
     "pk": 5,
     "fields": {
-        "name": "Nirvana",
-        "founded": "1987-1994",
-        "genre": [2],
-        "description": "Nirvana vznikla koncem 80. let v Seattlu a stala se hlasem generace X. V čele s Kurtem Cobainem přinesla do hlavního proudu syrový, emotivní grunge zvuk kombinující punk, alternativní rock a introspektivní texty. Průlomové album Nevermind (1991) obsahuje hymnický hit „Smells Like Teen Spirit“, který katapultoval kapelu na vrchol. Přestože Nirvana existovala jen krátce, její vliv na hudbu a kulturu zůstává obrovský.",
-        "logo" : "https://cdn.freebiesupply.com/logos/large/2x/nirvana-1-logo-black-and-white.png",
-        "photo" : "https://dailytimes.com.pk/assets/uploads/2020/01/200107-03.jpg",
-        "members" : "Kurt Cobain, Krist Novoselic, Dave Grohl"
+      "name": "Nirvana",
+      "founded": "1987-1994",
+      "genre": [2],
+      "description": "Nirvana vznikla koncem 80. let v Seattlu a stala se hlasem generace X. V čele s Kurtem Cobainem přinesla do hlavního proudu syrový, emotivní grunge zvuk kombinující punk, alternativní rock a introspektivní texty. Průlomové album Nevermind (1991) obsahuje hymnický hit „Smells Like Teen Spirit“, který katapultoval kapelu na vrchol. Přestože Nirvana existovala jen krátce, její vliv na hudbu a kulturu zůstává obrovský.",
+      "logo": "https://cdn.freebiesupply.com/logos/large/2x/nirvana-1-logo-black-and-white.png",
+      "photo": "https://dailytimes.com.pk/assets/uploads/2020/01/200107-03.jpg",
+      "members": "Kurt Cobain, Krist Novoselic, Dave Grohl"
     }
-},
-
-{
+  },
+  {
     "model": "content.genre",
     "pk": 1,
     "fields": {
-        "name": "Rock"
+      "name": "Rock"
     }
-
-
-},
-{
+  },
+  {
     "model": "content.genre",
     "pk": 2,
     "fields": {
-        "name": "Grunge"
+      "name": "Grunge"
     }
-
-
-},
-{
+  },
+  {
     "model": "content.album",
     "pk": 1,
     "fields": {
-        "band": 1,
-        "title": "Back in Black",
-        "release_date": "1980",
-        "cover_image": "https://upload.wikimedia.org/wikipedia/commons/9/92/ACDC_Back_in_Black.png"
+      "band": 1,
+      "title": "Back in Black",
+      "release_date": "1980",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/9/92/ACDC_Back_in_Black.png"
     }
-},
-{
+  },
+  {
     "model": "content.album",
     "pk": 2,
     "fields": {
-        "band": 1,
-        "title": "Highway to Hell",
-        "release_date": "1979",
-        "cover_image": "https://upload.wikimedia.org/wikipedia/en/a/ac/Acdc_Highway_to_Hell.JPG"
+      "band": 1,
+      "title": "Highway to Hell",
+      "release_date": "1979",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/a/ac/Acdc_Highway_to_Hell.JPG"
     }
-},
-{
+  },
+  {
     "model": "content.album",
     "pk": 3,
     "fields": {
-        "band": 2,
-        "title": "Led Zeppelin IV",
-        "release_date": "1971",
-        "cover_image": "https://upload.wikimedia.org/wikipedia/en/2/26/Led_Zeppelin_-_Led_Zeppelin_IV.jpg"
+      "band": 2,
+      "title": "Led Zeppelin IV",
+      "release_date": "1971",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/2/26/Led_Zeppelin_-_Led_Zeppelin_IV.jpg"
     }
-}
+  },
+  {
+    "model": "content.album",
+    "pk": 4,
+    "fields": {
+      "band": 1,
+      "title": "High Voltage (Australian edition)",
+      "release_date": "1975",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/e/e8/AustralianHighVoltage_ACDC.jpg"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 5,
+    "fields": {
+      "band": 1,
+      "title": "Dirty Deeds Done Dirt Cheap",
+      "release_date": "1976",
+      "cover_image": "https://supraphonline.cz/cover/200/0/0/4/189053.jpg?1609909891"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 6,
+    "fields": {
+      "band": 1,
+      "title": "Let There Be Rock",
+      "release_date": "1977",
+      "cover_image": "https://i.scdn.co/image/ab67616d0000b2734718061d413739785f87230d"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 7,
+    "fields": {
+      "band": 1,
+      "title": "Powerage",
+      "release_date": "1978",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/d/de/Acdc_Powerage.JPG"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 8,
+    "fields": {
+      "band": 1,
+      "title": "Flick of the Switch",
+      "release_date": "1983",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/8/8d/Ac-dc_Flick_of_the_Switch.JPG"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 9,
+    "fields": {
+      "band": 1,
+      "title": "Fly on the Wall",
+      "release_date": "1985",
+      "cover_image": "https://data.bontonland.cz/fotky/84/p-27943-full.jpg"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 10,
+    "fields": {
+      "band": 1,
+      "title": "Blow Up Your Video",
+      "release_date": "1988",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/8/80/Blowupyourvideo.jpg"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 11,
+    "fields": {
+      "band": 1,
+      "title": "The Razors Edge",
+      "release_date": "1990",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/a/a8/Razorsedge.jpg"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 12,
+    "fields": {
+      "band": 1,
+      "title": "Ballbreaker",
+      "release_date": "1995",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/5/52/Ballbreaker.jpg"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 13,
+    "fields": {
+      "band": 1,
+      "title": "Stiff Upper Lip",
+      "release_date": "2000",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/0/09/Stiff_Upper_Lip.jpg"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 14,
+    "fields": {
+      "band": 1,
+      "title": "Black Ice",
+      "release_date": "2008",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/3/3e/Black_ice_red.jpg"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 15,
+    "fields": {
+      "band": 1,
+      "title": "Rock or Bust",
+      "release_date": "2014",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/7/7f/Rock_or_Bust.jpg"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 16,
+    "fields": {
+      "band": 1,
+      "title": "Power Up",
+      "release_date": "2020",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/4/4f/ACDCPowerUp.jpg"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 17,
+    "fields": {
+      "band": 2,
+      "title": "Led Zeppelin",
+      "release_date": "1969",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/e/ef/Led_Zeppelin_-_Led_Zeppelin_%281969%29_front_cover.png"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 18,
+    "fields": {
+      "band": 2,
+      "title": "Led Zeppelin II",
+      "release_date": "1969",
+      "cover_image": "https://data.bontonland.cz/fotky/200/p-78788-full.jpg"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 19,
+    "fields": {
+      "band": 2,
+      "title": "Led Zeppelin III",
+      "release_date": "1970",
+      "cover_image": "https://www.gramodesky.cz/storage/images/led-zeppelin-led-zeppelin-iii-1970-12797-16.jpg.webp"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 20,
+    "fields": {
+      "band": 2,
+      "title": "Houses of the Holy",
+      "release_date": "1973",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/9/9f/Led_Zeppelin_-_Houses_of_the_Holy.jpg"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 21,
+    "fields": {
+      "band": 2,
+      "title": "Physical Graffiti",
+      "release_date": "1975",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/e/e3/Led_Zeppelin_-_Physical_Graffiti.jpg"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 22,
+    "fields": {
+      "band": 2,
+      "title": "Presence",
+      "release_date": "1976",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/f/f3/Led_Zeppelin_-_Presence.jpg"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 23,
+    "fields": {
+      "band": 2,
+      "title": "In Through the Out Door",
+      "release_date": "1979",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/b/ba/Led_Zeppelin_-_In_Through_the_Out_Door.jpg"
+    }
+  },
+  {
+    "model": "content.album",
+    "pk": 24,
+    "fields": {
+      "band": 2,
+      "title": "Coda",
+      "release_date": "1982",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Led_Zeppelin_-_Coda.jpg"
+    }
+  }
 ]

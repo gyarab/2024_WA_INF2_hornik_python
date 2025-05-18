@@ -123,3 +123,45 @@
     transition: all 1.5s ease;
 }
 
+@media screen and (max-width: 768px) {
+    .band-detail-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .band-info,
+    .band-logo-box,
+    .band-photo-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .description {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .band-photo {
+        width: 90%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .band-logo {
+        width: 120px;
+        height: auto;
+    }
+
+    .albums-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .album-card {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+}
+
