@@ -48,13 +48,24 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+        justify-content: center;
     }
 
     .band-card {
         width: 80%;
-        height: auto;
+        height: 240px;
         margin: 10px auto;
         padding: 10px;
-
+        justify-content: center;
     }
+
+    .band-card img {
+    width: 70%;
+    border-radius: 8px;
+    height: auto;
+    justify-content: center;
+    object-fit: cover;
+    justify-self: center;
+
+}
 }

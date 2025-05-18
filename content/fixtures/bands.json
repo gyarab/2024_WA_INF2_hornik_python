@@ -6,7 +6,7 @@
         "name": "AC/DC",
         "founded": "1973",
         "genre": [1],
-        "description": "bla bla bla",
+        "description": "AC/DC je australská rocková kapela založená v roce 1973 bratry Malcolmem a Angusem Youngovými. Proslavila se syrovým hardrockovým zvukem, jednoduchými, ale silnými kytarovými riffy a strhujícím pódiovým projevem. Alba jako High Voltage, Highway to Hell nebo Back in Black patří mezi nejprodávanější v historii rockové hudby. AC/DC jsou považováni za jednu z největších kapel všech dob a jejich styl zůstává nezaměnitelný.",
         "logo" : "https://upload.wikimedia.org/wikipedia/commons/5/58/Logo_ACDC.svg"
     }
 },
@@ -17,7 +17,7 @@
         "name": "Led Zeppelin",
         "founded": "1968",
         "genre": [1],
-        "description": "bla bla bla",
+        "description": "Led Zeppelin, vzniklí v roce 1968, patří mezi zakladatele hard rocku a heavy metalu. Jejich hudba spojuje blues, folk, psychedelii i monumentální rockové aranže. Skupina se proslavila nejen hity jako „Whole Lotta Love“ nebo „Kashmir“, ale i svou mystikou, experimentálním zvukem a monumentálními koncerty. Album Led Zeppelin IV s ikonickou skladbou „Stairway to Heaven“ je považováno za jeden z vrcholů rockové tvorby.",
         "logo" : "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Led_Zeppelin_logo.svg/2560px-Led_Zeppelin_logo.svg.png"
     }
 },
@@ -28,7 +28,7 @@
         "name": "The Beatles",
         "founded": "1960",
         "genre": [1],
-        "description": "bla bla bla",
+        "description": "The Beatles, aktivní mezi lety 1960–1970, byli britskou skupinou, která zcela změnila podobu populární hudby. John Lennon, Paul McCartney, George Harrison a Ringo Starr začínali jako beatová senzace, ale rychle přešli k experimentálním a inovativním nahrávkám. Jejich diskografie zahrnuje přelomová alba jako Revolver, Sgt. Pepper's Lonely Hearts Club Band nebo Abbey Road. Beatles ovlivnili nespočet umělců a zůstávají kulturní ikonou.",
         "logo" : "https://images.seeklogo.com/logo-png/13/2/the-beatles-logo-png_seeklogo-138099.png"
     }
 },
@@ -39,7 +39,7 @@
         "name": "Queen",
         "founded": "1970",
         "genre": [1],
-        "description": "bla bla bla",
+        "description": "Queen, založení v roce 1970, spojili tvrdý rock, pop i operní prvky do unikátního zvuku, který se stal světovým fenoménem. Frontman Freddie Mercury vynikal svým charismatem a hlasovým rozsahem, zatímco Brian May přinesl charakteristický zvuk své kytary Red Special. Hity jako „Bohemian Rhapsody“, „We Are the Champions“ nebo „Somebody to Love“ definují jejich bohatou diskografii, která stále oslovuje nové generace fanoušků.",
         "logo" : "https://imgs.smoothradio.com/images/26964?crop=16_9&width=660&relax=1&format=webp&signature=K7p32xCrP-zbqOoQVxZRhRfbp50="
     }
 },
@@ -50,8 +50,8 @@
         "name": "Nirvana",
         "founded": "1987",
         "genre": [2],
-        "description": "bla bla bla",
-        "logo" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Nirvana_logo.svg/2560px-Nirvana_logo.svg.png"
+        "description": "Nirvana vznikla koncem 80. let v Seattlu a stala se hlasem generace X. V čele s Kurtem Cobainem přinesla do hlavního proudu syrový, emotivní grunge zvuk kombinující punk, alternativní rock a introspektivní texty. Průlomové album Nevermind (1991) obsahuje hymnický hit „Smells Like Teen Spirit“, který katapultoval kapelu na vrchol. Přestože Nirvana existovala jen krátce, její vliv na hudbu a kulturu zůstává obrovský.",
+        "logo" : "https://cdn.freebiesupply.com/logos/large/2x/nirvana-1-logo-black-and-white.png"
     }
 },
 
@@ -86,6 +86,16 @@
 {
     "model": "content.album",
     "pk": 2,
+    "fields": {
+        "band": 1,
+        "title": "Highway to Hell",
+        "release_date": "1979",
+        "cover_image": "https://upload.wikimedia.org/wikipedia/en/a/ac/Acdc_Highway_to_Hell.JPG"
+    }
+},
+{
+    "model": "content.album",
+    "pk": 3,
     "fields": {
         "band": 2,
         "title": "Led Zeppelin IV",

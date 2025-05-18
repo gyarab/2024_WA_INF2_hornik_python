@@ -31,7 +31,7 @@
 .album-card h3 {
     font-size: 1.2em;
     color: #333;
-    padding: 10px;
+    padding: 2px;
 }
 .album-card:hover {
     transform: scale(1.05);
@@ -41,7 +41,7 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .album-card img {
-    width: 100%;
+    width: 70%;
     border-radius: 8px;
     height: auto;
     object-fit: cover;

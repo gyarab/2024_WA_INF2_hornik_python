@@ -10,7 +10,7 @@
     {% else %}
         <p>Logo není dostupné</p>
     {% endif %}
-    <p>Celý název interpreta: {{ band.name }}</p>
+    <p>Celý název umělce: {{ band.name }}</p>
     <p>Rok založení: {{ band.founded }}</p>
     <p>Žánr:  {% for genre in band.genre.all%}
         {{ genre.name }}
@@ -19,7 +19,7 @@
     
 
     
-    <h2>Alba</h2>
+    <h2>Alba:</h2>
     <div class="albums-container">
         {% for album in albums %}
             <div class="album-card">

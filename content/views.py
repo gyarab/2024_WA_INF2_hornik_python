@@ -1,7 +1,7 @@
 # content/views.py
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Q
-from .models import Band, Genre
+from .models import Band, Genre, Album
 
 def homepage(request):
     genre_id = request.GET.get('genre')
@@ -27,3 +27,8 @@ def band_detail(request, band_id):
     band = get_object_or_404(Band, id=band_id)
     albums = band.album.all()
     return render(request, 'content/band_detail.html', {'band': band, 'albums': albums})
+
+def album_detail(request, album_id):
+    album = get_object_or_404(Album, id=album_id)
+    band = album.band
+    return render(request, 'content/album_detail.html', {'album': album, 'band': band})
