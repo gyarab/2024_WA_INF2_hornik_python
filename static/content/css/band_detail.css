@@ -1,9 +1,20 @@
-/* Detail kapely */
-.band-detail {
-    text-align: center;
-}
+
 .container h1{
     margin-bottom: 20px;
+}
+.band-detail{
+    color: black;
+    background-color: white;
+    border-left: #333 solid 1px;
+    border-right: #333 solid 1px;
+    border-bottom: #333 solid 1px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 200px;
+    padding-top: 20px;
+    justify-self: center;
+    margin-top: 0px;
+    padding-bottom: 10px;
 }
 .album-card {
     background-color: #FFFFFF;
@@ -34,6 +45,7 @@
     font-size: 1.2em;
     color: #333;
     padding: 2px;
+    font-size: 1em;
 }
 .album-card:hover {
     transform: scale(1.05);
@@ -76,10 +88,11 @@
     gap: 30px;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     justify-self: center;
+    background-color: white;
+
 }
 
 .band-info {
@@ -87,6 +100,7 @@
     text-align: center;
     transform: translateX(-60px);
     opacity: 0;
+
 }
 .band-info.animate-slide-left {
     transform: translateX(0);

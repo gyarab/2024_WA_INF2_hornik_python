@@ -4,7 +4,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(224, 224, 224);
+    background-image: url("https://images.pexels.com/photos/167092/pexels-photo-167092.jpeg");
+    background-size: cover;
     color: black;
     justify-content: center;
     text-align: center;
@@ -16,7 +17,8 @@ h1 {
     font-weight: 400;
     position: absolute; 
     left: 50%; 
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+    top: 10px;
 }
 
 
@@ -26,11 +28,21 @@ h1 {
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(to right, #1c1c1c, #696969);
     color: white;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50px;
+}
+footer {
+    background: linear-gradient(to left, #1c1c1c, #696969);
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }

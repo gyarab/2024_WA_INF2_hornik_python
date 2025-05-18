@@ -34,18 +34,18 @@
     </div>
 </div>
 
-<h2>Hledej album!</h2>
+<h2 class="band-detail">Hledej album!</h2>
 
 <form method="get" class="search-filter-form">
     <input type="text" name="search" placeholder="Vyhledat album" value="{{ search_query }}">
     <select name="sort">
-        <option value="">-- Seřadit podle --</option>
+        <option value="">-- seřadit podle --</option>
         <option value="title_asc" {% if sort_option == 'title_asc' %}selected{% endif %}>Abecedně (A-Z)</option>
         <option value="title_desc" {% if sort_option == 'title_desc' %}selected{% endif %}>Abecedně (Z-A)</option>
         <option value="year_asc" {% if sort_option == 'year_asc' %}selected{% endif %}>Rok ↑</option>
         <option value="year_desc" {% if sort_option == 'year_desc' %}selected{% endif %}>Rok ↓</option>
     </select>
-    <button type="submit">Filtrovat</button>
+    <button type="submit">Hledat</button>
 </form>
 
 <div class="albums-container">
