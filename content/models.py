@@ -2,13 +2,16 @@ from django.db import models
 
 class Band(models.Model):
     name = models.CharField(max_length=100)
-    founded = models.IntegerField(null=True, blank=True)
+    founded = models.CharField(max_length=100, blank=True, null=True)
     genre = models.ManyToManyField('Genre', related_name="bands", blank=True)
     description = models.TextField()
     logo = models.URLField(max_length=500, blank=True, null=True)
-    
+    photo = models.URLField(max_length=500, blank=True, null=True)
+    members = models.TextField(blank=True, null=True)
+
     def __str__(self):
         return self.name
+
 
 class Album(models.Model):
     band = models.ForeignKey(Band, related_name='album', on_delete=models.CASCADE)

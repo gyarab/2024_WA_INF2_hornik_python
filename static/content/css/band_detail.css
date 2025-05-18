@@ -26,6 +26,8 @@
     gap: 20px;
     padding: 20px;
     justify-content: space-around;
+    transform: translateY(40px);
+    opacity: 0;
     
 }
 .album-card h3 {
@@ -53,3 +55,71 @@
     margin-bottom: 10px;
     margin-top: 10px;
 }
+.description {
+    width: 500px;
+    justify-self: center;
+    border: #333 solid 1px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  
+}
+.description:hover {
+    scale: 1.05;
+    transition: 0.2s;
+    transform: rotate(1deg);
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2);
+}
+.band-detail-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-self: center;
+}
+
+.band-info {
+    flex: 1 1 60%;
+    text-align: center;
+    transform: translateX(-60px);
+    opacity: 0;
+}
+.band-info.animate-slide-left {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 1.5s ease;
+}
+
+.band-logo-box {
+    flex: 1 1 35%;
+    text-align: center;
+}
+.band-photo-box {
+    flex: 1 1 35%;
+    text-align: center;
+}
+
+.band-photo {
+    width: 120%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(0.8);
+    opacity: 0;
+}
+.albums-container.animate-slide-up {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 1.5s ease;
+}
+.band-photo.animate-zoom {
+    transform: scale(1);
+    opacity: 1;
+    transition: all 1.5s ease;
+}
+

@@ -4,10 +4,13 @@
     "pk": 1,
     "fields": {
         "name": "AC/DC",
-        "founded": "1973",
+        "founded": "1973-dosud",
         "genre": [1],
         "description": "AC/DC je australská rocková kapela založená v roce 1973 bratry Malcolmem a Angusem Youngovými. Proslavila se syrovým hardrockovým zvukem, jednoduchými, ale silnými kytarovými riffy a strhujícím pódiovým projevem. Alba jako High Voltage, Highway to Hell nebo Back in Black patří mezi nejprodávanější v historii rockové hudby. AC/DC jsou považováni za jednu z největších kapel všech dob a jejich styl zůstává nezaměnitelný.",
-        "logo" : "https://upload.wikimedia.org/wikipedia/commons/5/58/Logo_ACDC.svg"
+        "logo" : "https://upload.wikimedia.org/wikipedia/commons/5/58/Logo_ACDC.svg",
+        "photo" : "https://www.rollingstone.com/wp-content/uploads/2020/10/10025-01E-JC-white_group_4559_sRGB.jpg",
+        "members" : "Angus Young, Brian Johnson, Cliff Williams, Phil Rudd, Stevie Young"
+    
     }
 },
 {
@@ -15,10 +18,13 @@
     "pk": 2,
     "fields": {
         "name": "Led Zeppelin",
-        "founded": "1968",
+        "founded": "1968-1980",
         "genre": [1],
         "description": "Led Zeppelin, vzniklí v roce 1968, patří mezi zakladatele hard rocku a heavy metalu. Jejich hudba spojuje blues, folk, psychedelii i monumentální rockové aranže. Skupina se proslavila nejen hity jako „Whole Lotta Love“ nebo „Kashmir“, ale i svou mystikou, experimentálním zvukem a monumentálními koncerty. Album Led Zeppelin IV s ikonickou skladbou „Stairway to Heaven“ je považováno za jeden z vrcholů rockové tvorby.",
-        "logo" : "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Led_Zeppelin_logo.svg/2560px-Led_Zeppelin_logo.svg.png"
+        "logo" : "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Led_Zeppelin_logo.svg/2560px-Led_Zeppelin_logo.svg.png",
+        "photo" : "https://www.udiscovermusic.com/wp-content/uploads/2020/11/Led-Zeppelin-GettyImages-84848509-1000x600.jpg",
+        "members" : "Robert Plant, Jimmy Page, John Paul Jones, John Bonham"
+
     }
 },
 {
@@ -26,10 +32,13 @@
     "pk": 3,
     "fields": {
         "name": "The Beatles",
-        "founded": "1960",
+        "founded": "1960-1970",
         "genre": [1],
         "description": "The Beatles, aktivní mezi lety 1960–1970, byli britskou skupinou, která zcela změnila podobu populární hudby. John Lennon, Paul McCartney, George Harrison a Ringo Starr začínali jako beatová senzace, ale rychle přešli k experimentálním a inovativním nahrávkám. Jejich diskografie zahrnuje přelomová alba jako Revolver, Sgt. Pepper's Lonely Hearts Club Band nebo Abbey Road. Beatles ovlivnili nespočet umělců a zůstávají kulturní ikonou.",
-        "logo" : "https://images.seeklogo.com/logo-png/13/2/the-beatles-logo-png_seeklogo-138099.png"
+        "logo" : "https://images.seeklogo.com/logo-png/13/2/the-beatles-logo-png_seeklogo-138099.png",
+        "photo" : "https://people.com/thmb/PMUyQaP0AFsOP-Pz4Cwzbrc5KEk=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/the-beetles-2-22b122473d4747759438521bde786ada.jpg",
+        "members" : "John Lennon, Paul McCartney, George Harrison, Ringo Starr"
+
     }
 },
 {
@@ -37,10 +46,13 @@
     "pk": 4,
     "fields": {
         "name": "Queen",
-        "founded": "1970",
+        "founded": "1970-1991",
         "genre": [1],
         "description": "Queen, založení v roce 1970, spojili tvrdý rock, pop i operní prvky do unikátního zvuku, který se stal světovým fenoménem. Frontman Freddie Mercury vynikal svým charismatem a hlasovým rozsahem, zatímco Brian May přinesl charakteristický zvuk své kytary Red Special. Hity jako „Bohemian Rhapsody“, „We Are the Champions“ nebo „Somebody to Love“ definují jejich bohatou diskografii, která stále oslovuje nové generace fanoušků.",
-        "logo" : "https://imgs.smoothradio.com/images/26964?crop=16_9&width=660&relax=1&format=webp&signature=K7p32xCrP-zbqOoQVxZRhRfbp50="
+        "logo" : "https://imgs.smoothradio.com/images/26964?crop=16_9&width=660&relax=1&format=webp&signature=K7p32xCrP-zbqOoQVxZRhRfbp50=",
+        "photo" : "https://upload.wikimedia.org/wikipedia/commons/e/ec/Queen_A_Night_At_The_Opera_%281975_Elektra_publicity_photo_02%29.jpg",
+        "members" : "Freddie Mercury, Brian May, Roger Taylor, John Deacon"
+
     }
 },
 {
@@ -48,10 +60,12 @@
     "pk": 5,
     "fields": {
         "name": "Nirvana",
-        "founded": "1987",
+        "founded": "1987-1994",
         "genre": [2],
         "description": "Nirvana vznikla koncem 80. let v Seattlu a stala se hlasem generace X. V čele s Kurtem Cobainem přinesla do hlavního proudu syrový, emotivní grunge zvuk kombinující punk, alternativní rock a introspektivní texty. Průlomové album Nevermind (1991) obsahuje hymnický hit „Smells Like Teen Spirit“, který katapultoval kapelu na vrchol. Přestože Nirvana existovala jen krátce, její vliv na hudbu a kulturu zůstává obrovský.",
-        "logo" : "https://cdn.freebiesupply.com/logos/large/2x/nirvana-1-logo-black-and-white.png"
+        "logo" : "https://cdn.freebiesupply.com/logos/large/2x/nirvana-1-logo-black-and-white.png",
+        "photo" : "https://dailytimes.com.pk/assets/uploads/2020/01/200107-03.jpg",
+        "members" : "Kurt Cobain, Krist Novoselic, Dave Grohl"
     }
 },
 

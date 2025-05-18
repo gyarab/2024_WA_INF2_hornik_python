@@ -4,35 +4,66 @@
 {% block title %}{{ band.name }}{% endblock %}
 
 {% block content %}
+<div class="band-detail-wrapper">
+    <div class="band-info">
+        {% if band.logo %}
+            <img src="{{ band.logo }}" alt="{{ band.name }} logo" class="band-logo">
+        {% else %}
+            <p>Logo není dostupné</p>
+        {% endif %}
+        <p><strong>Celý název umělce:</strong> {{ band.name }}</p>
+        <p><strong>Aktivní roky:</strong> {{ band.founded }}</p>
+        <p><strong>Žánr:</strong>
+            {% for genre in band.genre.all %}
+                {{ genre.name }}{% if not forloop.last %}, {% endif %}
+            {% endfor %}
+       </p>
+        {% if band.members %}
+            <p><strong>Členové kapely:</strong> {{ band.members }}</p>
+        {% endif %}
 
-    {% if band.logo %}
-        <img src="{{ band.logo }}" alt="{{ band.name }} logo" class="band-logo">
-    {% else %}
-        <p>Logo není dostupné</p>
-    {% endif %}
-    <p>Celý název umělce: {{ band.name }}</p>
-    <p>Rok založení: {{ band.founded }}</p>
-    <p>Žánr:  {% for genre in band.genre.all%}
-        {{ genre.name }}
-    {% endfor %} </p>
-    <p>{{ band.description }}</p>
-    
-
-    
-    <h2>Alba:</h2>
-    <div class="albums-container">
-        {% for album in albums %}
-            <div class="album-card">
-                <h3>{{ album.title }}</h3>
-                {% if album.cover_image %}
-                    <img src="{{ album.cover_image }}" alt="{{ album.title }} cover" class="album-cover">
-                {% else %}
-                    <p>Obal alba není dostupný</p>
-                {% endif %}
-                <p>Rok vydání: {{ album.release_date }}</p>
-            </div>
-        {% empty %}
-            <p>Tato kapela zatím nemá žádná alba.</p>
-        {% endfor %}
+        <p class="description">{{ band.description }}</p>
     </div>
+
+    <div class="band-photo-box">
+        {% if band.photo %}
+            <img src="{{ band.photo }}" alt="Foto kapely {{ band.name }}" class="band-photo">
+        {% else %}
+            <p>Fotka kapely není dostupná</p>
+        {% endif %}
+    </div>
+</div>
+
+<h2>Hledej album!</h2>
+
+<form method="get" class="search-filter-form">
+    <input type="text" name="search" placeholder="Vyhledat album" value="{{ search_query }}">
+    <select name="sort">
+        <option value="">-- Seřadit podle --</option>
+        <option value="title_asc" {% if sort_option == 'title_asc' %}selected{% endif %}>Abecedně (A-Z)</option>
+        <option value="title_desc" {% if sort_option == 'title_desc' %}selected{% endif %}>Abecedně (Z-A)</option>
+        <option value="year_asc" {% if sort_option == 'year_asc' %}selected{% endif %}>Rok ↑</option>
+        <option value="year_desc" {% if sort_option == 'year_desc' %}selected{% endif %}>Rok ↓</option>
+    </select>
+    <button type="submit">Filtrovat</button>
+</form>
+
+<div class="albums-container">
+    {% for album in albums %}
+        <div class="album-card">
+            <h3>{{ album.title }}</h3>
+            {% if album.cover_image %}
+                <img src="{{ album.cover_image }}" alt="{{ album.title }} cover" class="album-cover">
+            {% else %}
+                <p>Obal alba není dostupný</p>
+            {% endif %}
+            <p>Rok vydání: {{ album.release_date }}</p>
+        </div>
+    {% empty %}
+        <p>Tato kapela zatím nemá žádná alba.</p>
+    {% endfor %}
+</div>
+
+<script src="{% static 'content/js/band_detail.js' %}"></script>
 {% endblock %}
+
