@@ -7,7 +7,7 @@ def homepage(request):
     genre_id = request.GET.get('genre')
     search_query = request.GET.get('search')
     
-    bands = Band.objects.all()
+    bands = Band.objects.all().order_by('-id')
 
     if genre_id:
         bands = bands.filter(genre__id=genre_id)
