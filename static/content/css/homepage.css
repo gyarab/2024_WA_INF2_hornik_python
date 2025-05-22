@@ -37,7 +37,6 @@
 
 .band-card img {
     width: 100%;
-    border-radius: 8px;
     height: auto;
     object-fit: cover;
 }
@@ -100,12 +99,27 @@
 
     .band-card img {
     width: 70%;
-    border-radius: 8px;
     height: auto;
     justify-content: center;
     object-fit: cover;
     justify-self: center;
     margin-top: -10px;
 
+}
+    .latest-bands {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: rgba(0, 0, 0, 0.15);
+        border: 3px solid #777777;
+        border-radius: 20px;
+        margin: 0;
+}
+    .latest-bands .small-card {
+        width: 80%;
+        height: auto;
+        padding: 8px;
 }
 }
