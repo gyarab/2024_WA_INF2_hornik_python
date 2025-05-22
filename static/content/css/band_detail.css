@@ -2,18 +2,6 @@
 .container h1{
     margin-bottom: 20px;
 }
-.band-detail{
-    color: black;
-    background-color: white;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    width: 200px;
-    padding-top: 20px;
-    justify-self: center;
-    margin-top: 0px;
-    padding-bottom: 10px;
-
-}
 .album-card {
     background-color: #FFFFFF;
     border: 1px solid #ccc;
@@ -36,8 +24,7 @@
     padding: 20px;
     justify-content: space-around;
     transform: translateY(40px);
-    opacity: 0;
-    
+    opacity: 0; 
 }
 .album-card h3 {
     font-size: 1.2em;
@@ -91,6 +78,7 @@
     justify-self: center;
     background-color: white;
     border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .band-info {
