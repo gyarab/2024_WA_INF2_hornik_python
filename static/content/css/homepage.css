@@ -36,9 +36,14 @@
 
 .band-card img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 160px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
 }
+
+
 .latest-bands {
     display: flex;
     flex-wrap: wrap;
@@ -46,13 +51,14 @@
     gap: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: rgba(0, 0, 0, 0.15);
-    border: 3px solid #777777;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 3px solid #727272;
     border-radius: 20px;
     overflow: hidden;
     margin-left: 235px;
     margin-right: 235px;
-}
+
+}   
 
 .latest-bands .small-card {
     width: 130px;
@@ -67,9 +73,14 @@
 
 .latest-bands .small-card img {
     max-width: 100%;
+    max-height: 90px;
+    width: auto;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
+
 
 
 
@@ -97,14 +108,15 @@
     }
 
     .band-card img {
-    width: 70%;
+    max-width: 100%;
+    max-height: 80px;
+    width: auto;
     height: auto;
-    justify-content: center;
-    object-fit: cover;
-    justify-self: center;
-    margin-top: -10px;
-
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
+
     .latest-bands {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
