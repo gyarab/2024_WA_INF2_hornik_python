@@ -14,12 +14,22 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <a href="/" class="material-symbols-outlined">home</a>
-            <h1><a href="/">Diskografie</a></h1>
-        </div>      
-    </header>
+    <header class="main-header">
+  <div class="header-container">
+    <div class="header-left">
+      <a href="/" class="material-symbols-outlined home-icon">home</a   >
+      <h1 class="site-title"><a href="/">Diskografie</a></h1>
+    </div>
+    <div class="theme-toggle-wrapper">
+  <label class="theme-switch">
+    <input type="checkbox" id="theme-toggle">
+    <span class="slider"></span>
+  </label>
+</div>
+
+  </div>
+</header>
+
     
     <div class="container">
         {% block content %}
@@ -32,5 +42,6 @@
             <p>Šimon Horník, 3.E</p>
         </div>
     </footer>
+    <script src="{% static 'content/js/theme.js' %}"></script>
 </body>
 </html>

@@ -1,211 +1,260 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Ranchers&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+:root {
+  --background-color: #ffffff;
+  --text-color: #111111;
+  --primary-color: #1a73e8;
+  --secondary-color: #f1f3f4;
+
+  --card-bg: #f9f9f9;
+  --border-color: #ddd;
+}
+
+body.dark-mode {
+  --background-color: #121212;
+  --text-color: #eeeeee;
+  --primary-color: #bb86fc;
+  --secondary-color: #1f1f1f;
+
+  --card-bg: #1e1e1e;
+  --border-color: #333;
+}
+
+/* Základní styl */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(112.5deg, rgba(232, 232, 232, 0.03) 0%, rgba(232, 232, 232, 0.03) 2%,rgba(231, 231, 231, 0.03) 2%, rgba(231, 231, 231, 0.03) 4%,rgba(231, 231, 231, 0.03) 4%, rgba(231, 231, 231, 0.03) 11%,rgba(2,2,2, 0.08) 11%, rgba(2,2,2, 0.08) 67%,rgba(231, 231, 231, 0.03) 67%, rgba(231, 231, 231, 0.03) 90%,rgba(111, 111, 111, 0.03) 90%, rgba(111, 111, 111, 0.03) 100%),linear-gradient(157.5deg, rgba(210, 210, 210, 0.03) 0%, rgba(210, 210, 210, 0.03) 17%,rgba(254, 254, 254, 0.03) 17%, rgba(254, 254, 254, 0.03) 18%,rgba(96, 96, 96, 0.03) 18%, rgba(96, 96, 96, 0.03) 44%,rgba(159, 159, 159, 0.03) 44%, rgba(159, 159, 159, 0.03) 70%,rgba(24,24,24, 0.09) 70%, rgba(24,24,24, 0.09) 82%,rgba(16,16,16, 0.08) 82%, rgba(16,16,16, 0.08) 100%),linear-gradient(22.5deg, rgba(47, 47, 47, 0.03) 0%, rgba(47, 47, 47, 0.03) 32%,rgba(124, 124, 124, 0.03) 32%, rgba(124, 124, 124, 0.03) 40%,rgba(200, 200, 200, 0.03) 40%, rgba(200, 200, 200, 0.03) 42%,rgba(16,16,16, 0.08) 42%, rgba(16,16,16, 0.08) 64%,rgba(243, 243, 243, 0.03) 64%, rgba(243, 243, 243, 0.03) 94%,rgba(93, 93, 93, 0.03) 94%, rgba(93, 93, 93, 0.03) 100%),linear-gradient(90deg, #ffffff,#ffffff);
-    color: black;
-    justify-content: center;
-    text-align: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Ubuntu', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
 }
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+
 h1 {
-    text-align: center;
-    font-family: 'Boldonse', system-ui;
-    font-weight: 400;
-    position: absolute; 
-    left: 50%; 
-    transform: translateX(-50%);
-    top: 10px;
+  text-align: center;
+  font-family: 'Boldonse', sans-serif;
+  font-weight: 400;
+  margin: 0;
 }
-.line{
-    background: black;
-    padding: 2px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    margin-left: 300px;
-    margin-right: 300px;
-    border-radius: 15px;
+
+.line {
+  background: var(--text-color);
+  padding: 2px;
+  margin: 20px auto 40px auto;
+  border-radius: 15px;
+  width: 60%;
 }
-.material-symbols-outlined{
-    text-decoration: none;
-    color: white;
-    font-variation-settings:
+line.dark-mode {
+    background: var(--background-color);
+}
+
+/* Header */
+.main-header {
+  background: linear-gradient(to right, #1c1c1c, #696969);
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-title a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'Boldonse', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.home-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.theme-toggle {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #a973ff;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to left, #1c1c1c, #696969);
+  color: white;
+  padding: 15px 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.click-counter {
+  margin: 20px;
+}
+
+/* Formulář pro vyhledávání a filtrování */
+.search-filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-filter-form input[type="text"],
+.search-filter-form select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  min-width: 200px;
+  transition: border-color 0.3s ease;
+}
+
+.search-filter-form input[type="text"]:focus,
+.search-filter-form select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.search-filter-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-filter-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Ikona home */
+.material-symbols-outlined {
+  text-decoration: none;
+  color: white;
+  font-variation-settings:
     'FILL' 0,
     'wght' 400,
     'GRAD' 0,
     'opsz' 40;
 }
-
-.header-container{
-    display: flexbox;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+.theme-toggle-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-header {
-    background: linear-gradient(to right, #1c1c1c, #696969);
-    color: white;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 50px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-footer { 
-    background: linear-gradient(to left, #1c1c1c, #696969);
-    color: white;
-    padding: 15px 30px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.footer-container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 1.8rem;
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-.header-buttons a {
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    background-color: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--border-color);
+  transition: background-color 0.3s;
+  border-radius: 34px;
 }
 
-header h1 a {
-    color: white;
-    text-decoration: none;
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: transform 0.3s;
+  border-radius: 50%;
 }
 
-.click-counter {
-    align-items: center;
-    margin: 20px;
+/* Když je zaškrtnuto, tečka se přesune doprava */
+input:checked + .slider {
+  background-color: var(--primary-color);
 }
 
-.search-filter-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
-    align-items: center;
-    justify-content: center;
+input:checked + .slider::before {
+  transform: translateX(24px);
 }
 
-.search-filter-form input[type="text"],
-.search-filter-form select {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    min-width: 200px;
-    transition: border-color 0.3s ease;
-}
-
-.search-filter-form input[type="text"]:focus,
-.search-filter-form select:focus {
-    outline: none;
-    border-color: #007BFF;
-}
-
-.search-filter-form button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.search-filter-form button[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-/* Responsivní design pro mobilní zařízení */
+/* Responsivita */
 @media screen and (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
+  .site-title a {
+    font-size: 1.3rem;
+  }
 
-    header {
-        border-radius: 10px;
-        text-align: center;
-    }
-    header h1 {
-        margin: 0;
-        font-size: 1.3rem;
-        margin-top: 18px;
-        align-self: center;
-    }
+  .search-filter-form {
+    flex-direction: column;
+    gap: 15px;
+  }
 
-    .header-buttons {
-        justify-content: center;
-        width: 100%;
-        margin-top: 10px;
-    }
+  .search-filter-form input[type="text"],
+  .search-filter-form select,
+  .search-filter-form button[type="submit"] {
+    width: 70%;
+  }
 
-    .search-filter-form {
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
-        justify-items: center;
-    }
+  .click-counter {
+    margin-top: 60px;
+  }
 
-    .search-filter-form input[type="text"],
-    .search-filter-form select {
-        width: 70%;
-    }
-
-    .search-filter-form button[type="submit"] {
-        width: 70%;
-    }
-
-    .click-counter {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 10px;
-        margin-top: 60px;
-    }
-    .header-container{
-        display: flexbox;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
+  .line {
+    margin: 20px;
+  }
 }
-    footer{
-        border-radius: 15px;
-    }
-    .line{
-        background: black;
-        padding: 2px;
-        margin-top: 20px;
-        margin-bottom: 40px;
-        margin-left: 20px;
-        margin-right: 20px;
-        border-radius: 15px;
-}
-
-}
-
-

@@ -1,3 +1,21 @@
+:root {
+  --album-detail-bg: #ffffff;
+  --album-detail-shadow: rgba(0, 0, 0, 0.3);
+  --album-cover-shadow: rgba(0, 0, 0, 0.5);
+  --album-info-color: #000000;
+  --song-list-marker-color: #000000;
+  --song-list-color: #000000;
+}
+
+body.dark-mode {
+  --album-detail-bg: #1e1e1e;
+  --album-detail-shadow: rgba(0, 0, 0, 0.8);
+  --album-cover-shadow: rgba(0, 0, 0, 0.8);
+  --album-info-color: #eeeeee;
+  --song-list-marker-color: #eeeeee;
+  --song-list-color: #cccccc;
+}
+
 .album-detail-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -7,27 +25,39 @@
     margin: 10px;
     padding: 96px 120px;
     justify-self: center;
-    background-color: white;
+    background-color: var(--album-detail-bg);
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px var(--album-detail-shadow);
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
-.album-cover-img{
+
+.album-cover-img {
     border-radius: 15px;
     width: 350px;
     height: auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px var(--album-cover-shadow);
+    transition: box-shadow 0.3s;
 }
-.album-info-box{
+
+.album-info-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0;
+    color: var(--album-info-color);
+    transition: color 0.3s;
 }
+
 .song-list {
     text-align: left;
     list-style: decimal inside; /* číslování uvnitř bloku */
+    color: var(--song-list-color);
+    transition: color 0.3s;
 }
+
 .song-list li::marker {
     font-weight: bold;
+    color: var(--song-list-marker-color);
+    transition: color 0.3s;
 }
