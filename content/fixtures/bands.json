@@ -106,239 +106,428 @@
       "band": 1,
       "title": "Back in Black",
       "release_date": "1980",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/9/92/ACDC_Back_in_Black.png"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 2,
-    "fields": {
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/9/92/ACDC_Back_in_Black.png",
+      "label": "Albert/Atlantic"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 2,
+        "fields": {
       "band": 1,
       "title": "Highway to Hell",
       "release_date": "1979",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/en/a/ac/Acdc_Highway_to_Hell.JPG"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 3,
-    "fields": {
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/a/ac/Acdc_Highway_to_Hell.JPG",
+      "label": "Albert/Atlantic"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 3,
+        "fields": {
       "band": 2,
       "title": "Led Zeppelin IV",
       "release_date": "1971",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/en/2/26/Led_Zeppelin_-_Led_Zeppelin_IV.jpg"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 4,
-    "fields": {
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/2/26/Led_Zeppelin_-_Led_Zeppelin_IV.jpg",
+      "label": "Atlantic"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 4,
+        "fields": {
       "band": 1,
       "title": "High Voltage (Australian edition)",
       "release_date": "1975",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/en/e/e8/AustralianHighVoltage_ACDC.jpg"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 5,
-    "fields": {
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/e/e8/AustralianHighVoltage_ACDC.jpg",
+      "label": "Albert"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 5,
+        "fields": {
       "band": 1,
       "title": "Dirty Deeds Done Dirt Cheap",
       "release_date": "1976",
-      "cover_image": "https://supraphonline.cz/cover/200/0/0/4/189053.jpg?1609909891"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 6,
-    "fields": {
+      "cover_image": "https://supraphonline.cz/cover/200/0/0/4/189053.jpg?1609909891",
+      "label": "Albert/Atlantic"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 6,
+        "fields": {
       "band": 1,
       "title": "Let There Be Rock",
       "release_date": "1977",
-      "cover_image": "https://i.scdn.co/image/ab67616d0000b2734718061d413739785f87230d"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 7,
-    "fields": {
+      "cover_image": "https://i.scdn.co/image/ab67616d0000b2734718061d413739785f87230d",
+      "label": "Albert/Atlantic"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 7,
+        "fields": {
       "band": 1,
       "title": "Powerage",
       "release_date": "1978",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/en/d/de/Acdc_Powerage.JPG"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 8,
-    "fields": {
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/d/de/Acdc_Powerage.JPG",
+      "label": "Albert/Atlantic"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 8,
+        "fields": {
       "band": 1,
       "title": "Flick of the Switch",
       "release_date": "1983",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/en/8/8d/Ac-dc_Flick_of_the_Switch.JPG"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 9,
-    "fields": {
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/8/8d/Ac-dc_Flick_of_the_Switch.JPG",
+      "label": "Albert/Atlantic"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 9,
+        "fields": {
       "band": 1,
       "title": "Fly on the Wall",
       "release_date": "1985",
-      "cover_image": "https://data.bontonland.cz/fotky/84/p-27943-full.jpg"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 10,
-    "fields": {
+      "cover_image": "https://data.bontonland.cz/fotky/84/p-27943-full.jpg",
+      "label": "Albert/Atlantic"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 10,
+        "fields": {
       "band": 1,
       "title": "Blow Up Your Video",
       "release_date": "1988",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/en/8/80/Blowupyourvideo.jpg"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 11,
-    "fields": {
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/8/80/Blowupyourvideo.jpg",
+      "label": "Albert/Atlantic"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 11,
+        "fields": {
       "band": 1,
       "title": "The Razors Edge",
       "release_date": "1990",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/en/a/a8/Razorsedge.jpg"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 12,
-    "fields": {
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/a/a8/Razorsedge.jpg",
+      "label": "Albert/Atco"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 12,
+        "fields": {
       "band": 1,
       "title": "Ballbreaker",
       "release_date": "1995",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/en/5/52/Ballbreaker.jpg"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 13,
-    "fields": {
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/5/52/Ballbreaker.jpg",
+      "label": "East West"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 13,
+        "fields": {
       "band": 1,
       "title": "Stiff Upper Lip",
       "release_date": "2000",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/en/0/09/Stiff_Upper_Lip.jpg"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 14,
-    "fields": {
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/0/09/Stiff_Upper_Lip.jpg",
+      "label": "East West"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 14,
+        "fields": {
       "band": 1,
       "title": "Black Ice",
       "release_date": "2008",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/en/3/3e/Black_ice_red.jpg"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 15,
-    "fields": {
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/3/3e/Black_ice_red.jpg",
+      "label": "Columbia"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 15,
+        "fields": {
       "band": 1,
       "title": "Rock or Bust",
       "release_date": "2014",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/en/7/7f/Rock_or_Bust.jpg"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 16,
-    "fields": {
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/7/7f/Rock_or_Bust.jpg",
+      "label": "Columbia"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 16,
+        "fields": {
       "band": 1,
       "title": "Power Up",
       "release_date": "2020",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/en/4/4f/ACDCPowerUp.jpg"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 17,
-    "fields": {
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/4/4f/ACDCPowerUp.jpg",
+      "label": "Columbia"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 17,
+        "fields": {
       "band": 2,
       "title": "Led Zeppelin",
       "release_date": "1969",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/en/e/ef/Led_Zeppelin_-_Led_Zeppelin_%281969%29_front_cover.png"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 18,
-    "fields": {
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/e/ef/Led_Zeppelin_-_Led_Zeppelin_%281969%29_front_cover.png",
+      "label": "Atlantic"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 18,
+        "fields": {
       "band": 2,
       "title": "Led Zeppelin II",
       "release_date": "1969",
-      "cover_image": "https://data.bontonland.cz/fotky/200/p-78788-full.jpg"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 19,
-    "fields": {
+      "cover_image": "https://data.bontonland.cz/fotky/200/p-78788-full.jpg",
+      "label": "Atlantic"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 19,
+        "fields": {
       "band": 2,
       "title": "Led Zeppelin III",
       "release_date": "1970",
-      "cover_image": "https://www.gramodesky.cz/storage/images/led-zeppelin-led-zeppelin-iii-1970-12797-16.jpg.webp"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 20,
-    "fields": {
+      "cover_image": "https://www.gramodesky.cz/storage/images/led-zeppelin-led-zeppelin-iii-1970-12797-16.jpg.webp",
+      "label": "Atlantic"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 20,
+        "fields": {
       "band": 2,
       "title": "Houses of the Holy",
       "release_date": "1973",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/en/9/9f/Led_Zeppelin_-_Houses_of_the_Holy.jpg"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 21,
-    "fields": {
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/9/9f/Led_Zeppelin_-_Houses_of_the_Holy.jpg",
+      "label": "Atlantic"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 21,
+        "fields": {
       "band": 2,
       "title": "Physical Graffiti",
       "release_date": "1975",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/en/e/e3/Led_Zeppelin_-_Physical_Graffiti.jpg"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 22,
-    "fields": {
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/e/e3/Led_Zeppelin_-_Physical_Graffiti.jpg",
+      "label": "Swan Song"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 22,
+        "fields": {
       "band": 2,
       "title": "Presence",
       "release_date": "1976",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/en/f/f3/Led_Zeppelin_-_Presence.jpg"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 23,
-    "fields": {
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/f/f3/Led_Zeppelin_-_Presence.jpg",
+      "label": "Swan Song"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 23,
+        "fields": {
       "band": 2,
       "title": "In Through the Out Door",
       "release_date": "1979",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/en/b/ba/Led_Zeppelin_-_In_Through_the_Out_Door.jpg"
-    }
-  },
-  {
-    "model": "content.album",
-    "pk": 24,
-    "fields": {
+      "cover_image": "https://upload.wikimedia.org/wikipedia/en/b/ba/Led_Zeppelin_-_In_Through_the_Out_Door.jpg",
+      "label": "Swan Song"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 24,
+        "fields": {
       "band": 2,
       "title": "Coda",
       "release_date": "1982",
-      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Led_Zeppelin_-_Coda.jpg"
-    }
-  },
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Led_Zeppelin_-_Coda.jpg",
+      "label": "Swan Song"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 25,
+        "fields": {
+          "band": 4,
+          "title": "Queen",
+          "release_date": "1973",
+          "cover_image": "https://upload.wikimedia.org/wikipedia/en/0/03/Queen_Queen.png",
+          "label": "EMI, Elektra"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 26,
+        "fields": {
+          "band": 4,
+          "title": "Queen II",
+          "release_date": "1974",
+          "cover_image": "https://www.udiscovermusic.com/wp-content/uploads/2019/03/Queen-II-album-cover-820.jpg",
+          "label": "EMI, Elektra"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 27,
+        "fields": {
+          "band": 4,
+          "title": "Sheer Heart Attack",
+          "release_date": "1974",
+          "cover_image": "https://data.bontonland.cz/fotky/26/p-8345-full.jpg",
+          "label": "EMI, Elektra"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 28,
+        "fields": {
+          "band": 4,
+          "title": "A Night at the Opera",
+          "release_date": "1975",
+          "cover_image": "https://data.bontonland.cz/fotky/62/p-45081-full.jpg",
+          "label": "EMI, Elektra"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 29,
+        "fields": {
+          "band": 4,
+          "title": "A Day at the Races",
+          "release_date": "1976",
+          "cover_image": "https://upload.wikimedia.org/wikipedia/en/3/31/A_Day_at_the_Races_%28Queen%29.jpg",
+          "label": "EMI, Elektra"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 30,
+        "fields": {
+          "band": 4,
+          "title": "News of the World",
+          "release_date": "1977",
+          "cover_image": "https://i.discogs.com/AhbGWWoa7ADfDvYhAoLQHW6Zq0ZvmYqX-s8vgYnIXis/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTY0/MDktMTI5MzI5MTQ0/OC5qcGVn.jpeg",
+          "label": "EMI, Elektra"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 31,
+        "fields": {
+          "band": 4,
+          "title": "Jazz",
+          "release_date": "1978",
+          "cover_image": "https://upload.wikimedia.org/wikipedia/en/0/06/Queen_Jazz.png",
+          "label": "EMI, Elektra"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 32,
+        "fields": {
+          "band": 4,
+          "title": "The Game",
+          "release_date": "1980",
+          "cover_image": "https://upload.wikimedia.org/wikipedia/en/1/16/Queen_The_Game.png",
+          "label": "EMI, Elektra"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 33,
+        "fields": {
+          "band": 4,
+          "title": "Flash Gordon",
+          "release_date": "1980",
+          "cover_image": "https://data.bontonland.cz/fotky/134/p-50339-full.jpg",
+          "label": "EMI, Elektra"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 34,
+        "fields": {
+          "band": 4,
+          "title": "Hot Space",
+          "release_date": "1982",
+          "cover_image": "https://data.bontonland.cz/fotky/230/p-106939-full.jpg",
+          "label": "EMI, Elektra"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 35,
+        "fields": {
+          "band": 4,
+          "title": "The Works",
+          "release_date": "1984",
+          "cover_image": "https://upload.wikimedia.org/wikipedia/en/3/39/Queen_The_Works.png",
+          "label": "EMI, Capitol"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 36,
+        "fields": {
+          "band": 4,
+          "title": "A Kind of Magic",
+          "release_date": "1986",
+          "cover_image": "https://upload.wikimedia.org/wikipedia/en/6/63/Queen_A_Kind_Of_Magic.png",
+          "label": "EMI, Capitol"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 37,
+        "fields": {
+          "band": 4,
+          "title": "The Miracle",
+          "release_date": "1989",
+          "cover_image": "https://upload.wikimedia.org/wikipedia/en/e/e3/Queen_The_Miracle.png",
+          "label": "Parlophone, Capitol"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 38,
+        "fields": {
+          "band": 4,
+          "title": "Innuendo",
+          "release_date": "1991",
+          "cover_image": "https://upload.wikimedia.org/wikipedia/en/f/f7/Queen_Innuendo.png",
+          "label": "Parlophone, Hollywood"
+        }
+      },
+      {
+        "model": "content.album",
+        "pk": 39,
+        "fields": {
+          "band": 4,
+          "title": "Made in Heaven",
+          "release_date": "1995",
+          "cover_image": "https://upload.wikimedia.org/wikipedia/en/0/03/Madeinheaven.jpg",
+          "label": "Parlophone, Hollywood"
+        }
+      },
   {
     "model": "content.song",
     "pk": 1,

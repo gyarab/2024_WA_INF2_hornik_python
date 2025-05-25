@@ -34,12 +34,12 @@
 
     <select name="sort">
         <option value="">Seřadit podle</option>
-        <option value="name" {% if sort_option == 'name' %}selected{% endif %}>Abecedy</option>
-        <option value="genre" {% if sort_option == 'genre' %}selected{% endif %}>Žánru</option>
-        <option value="year" {% if sort_option == 'year' %}selected{% endif %}>Roku</option>
+        <option value="name" {% if sort_option == 'name' %}selected{% endif %}>Abecedně (A-Z)</option>
+        <option value="name_desc" {% if sort_option == 'name_desc' %}selected{% endif %}>Abecedně (Z-A)</option>
+        <option value="year" {% if sort_option == 'year' %}selected{% endif %}>Rok založení</option>
     </select>
 
-    <button type="submit">Filtrovat</button>
+    <button type="submit">Hledat</button>
 </form>
 
 <div class="bands-container">
