@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Q
-from .models import Band, Genre
+from .models import Band, Genre, Album, Song
 
 def homepage(request):
     genre_id = request.GET.get('genre')
@@ -59,3 +59,8 @@ def band_detail(request, band_id):
         'search_query': search_query or '',
         'sort_option': sort_option or '',
     })
+
+def album_detail(request, pk):
+    album = get_object_or_404(Album, pk=pk)
+    songs = Song.objects.filter(album=album)  # případně jiný atribut pro pořadí
+    return render(request, 'content/album_detail.html', {'album': album, 'songs': songs})

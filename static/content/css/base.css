@@ -65,6 +65,7 @@ footer {
     border-top-right-radius: 15px;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .footer-container {
     display: flex;

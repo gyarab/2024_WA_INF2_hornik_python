@@ -1,0 +1,33 @@
+.album-detail-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 96px 120px;
+    justify-self: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.album-cover-img{
+    border-radius: 15px;
+    width: 400px;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.album-info-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+.song-list {
+    text-align: left;
+    list-style: decimal inside; /* číslování uvnitř bloku */
+}
+.song-list li::marker {
+    font-weight: bold;
+}

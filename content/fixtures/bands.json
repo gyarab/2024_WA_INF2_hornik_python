@@ -338,5 +338,167 @@
       "release_date": "1982",
       "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Led_Zeppelin_-_Coda.jpg"
     }
+  },
+  {
+    "model": "content.song",
+    "pk": 1,
+    "fields": {
+      "album": 1,
+      "title": "Hells Bells",
+      "duration": "00:05:12"
+    }
+  },
+  {
+    "model": "content.song",
+    "pk": 2,
+    "fields": {
+      "album": 1,
+      "title": "Shoot to Thrill",
+      "duration": "00:05:17"
+    }
+  },
+  {
+    "model": "content.song",
+    "pk": 3,
+    "fields": {
+      "album": 1,
+      "title": "What Do You Do for Money Honey",
+      "duration": "00:03:33"
+    }
+  },
+  {
+    "model": "content.song",
+    "pk": 4,
+    "fields": {
+      "album": 1,
+      "title": "Given the Dog a Bone",
+      "duration": "00:03:30"
+    }
+  },
+  {
+    "model": "content.song",
+    "pk": 5,
+    "fields": {
+      "album": 1,
+      "title": "Let Me Put My Love into You",
+      "duration": "00:04:16"
+    }
+  },
+  {
+    "model": "content.song",
+    "pk": 6,
+    "fields": {
+      "album": 1,
+      "title": "Back in Black",
+      "duration": "00:04:15"
+    }
+  },
+  {
+    "model": "content.song",
+    "pk": 7,
+    "fields": {
+      "album": 1,
+      "title": "You Shook Me All Night Long",
+      "duration": "00:03:30"
+    }
+  },
+  {
+    "model": "content.song",
+    "pk": 8,
+    "fields": {
+      "album": 1,
+      "title": "Have a Drink on Me",
+      "duration": "00:03:57"
+    }
+  },
+  {
+    "model": "content.song",
+    "pk": 9,
+    "fields": {
+      "album": 1,
+      "title": "Shake a Leg",
+      "duration": "00:04:06"
+    }
+  },
+  {
+    "model": "content.song",
+    "pk": 10,
+    "fields": {
+      "album": 1,
+      "title": "Rock and Roll Ain't Noise Pollution",
+      "duration": "00:04:15"
+    }
+  },
+  {
+    "model": "content.song",
+    "pk": 11,
+    "fields": {
+      "album": 3,
+      "title": "Black Dog",
+      "duration": "00:04:55"
+    }
+  },
+  {
+    "model": "content.song",
+    "pk": 12,
+    "fields": {
+      "album": 3,
+      "title": "Rock and Roll",
+      "duration": "00:03:40"
+    }
+  },
+  {
+    "model": "content.song",
+    "pk": 13,
+    "fields": {
+      "album": 3,
+      "title": "The Battle of Evermore",
+      "duration": "00:05:52"
+    }
+  },
+  {
+    "model": "content.song",
+    "pk": 14,
+    "fields": {
+      "album": 3,
+      "title": "Stairway to Heaven",
+      "duration": "00:08:02"
+    }
+  },
+  {
+    "model": "content.song",
+    "pk": 15,
+    "fields": {
+      "album": 3,
+      "title": "Misty Mountain Hop",
+      "duration": "00:04:39"
+    }
+  },
+  {
+    "model": "content.song",
+    "pk": 16,
+    "fields": {
+      "album": 3,
+      "title": "Four Sticks",
+      "duration": "00:04:44"
+    }
+  },
+  {
+    "model": "content.song",
+    "pk": 17,
+    "fields": {
+      "album": 3,
+      "title": "Going to California",
+      "duration": "00:03:31"
+    }
+  },
+  {
+    "model": "content.song",
+    "pk": 18,
+    "fields": {
+      "album": 3,
+      "title": "When the Levee Breaks",
+      "duration": "00:07:08"
+    }
   }
 ]

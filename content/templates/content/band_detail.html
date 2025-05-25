@@ -51,13 +51,14 @@
 <div class="albums-container">
     {% for album in albums %}
         <div class="album-card">
-            <h3>{{ album.title }}</h3>
-            {% if album.cover_image %}
-                <img src="{{ album.cover_image }}" alt="{{ album.title }} cover" class="album-cover">
-            {% else %}
-                <p>Obal alba není dostupný</p>
-            {% endif %}
-            <p>Rok vydání: {{ album.release_date }}</p>
+            <a href="{% url 'album_detail' album.pk %}">
+                <h3>{{ album.title }}</h3>
+                {% if album.cover_image %}
+                    <img src="{{ album.cover_image }}" alt="{{ album.title }} cover" class="album-cover">
+                {% else %}
+                    <p>Obal alba není dostupný</p>
+                {% endif %}
+            </a>
         </div>
     {% empty %}
         <p>Tato kapela zatím nemá žádná alba.</p>
@@ -66,4 +67,3 @@
 
 <script src="{% static 'content/js/band_detail.js' %}"></script>
 {% endblock %}
-

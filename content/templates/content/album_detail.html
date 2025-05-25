@@ -1,0 +1,33 @@
+{% extends 'content/base.html' %}
+{% load static %} {% load duration_filters %}
+
+{% block title %}{{ album.title }}{% endblock %}
+
+{% block content %}
+<div class="album-detail-wrapper">
+  <div class="album-cover-box">
+    {% if album.cover_image %}
+      <img src="{{ album.cover_image }}" alt="{{ album.title }} cover" class="album-cover-img">
+    {% else %}
+      <p>Obal alba není dostupný</p>
+    {% endif %}
+  </div>
+
+  <div class="album-info-box">
+    <h2>{{ album.title }}</h2>
+    <p><strong>Datum vydání:</strong> {{ album.release_date }}</p>
+    <p><strong>Počet skladeb (délka):</strong> {{ album.track_count }}, {{ album.total_duration }}</p>
+
+    <p><strong>Label:</strong> {{ album.label }}</p>
+
+    <h3>Seznam skladeb:</h3>
+    <ol class="song-list">
+        {% for song in songs %}
+            <li>{{ song.title }} ({{ song.duration|format_duration }})</li>
+        {% empty %}
+            <li>Žádné skladby</li>
+        {% endfor %}
+    </ol>
+  </div>
+</div>
+{% endblock %}
